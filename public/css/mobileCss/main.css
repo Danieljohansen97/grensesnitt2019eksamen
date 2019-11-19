@@ -2,7 +2,6 @@
 body {
     background-color: #ddd;
     margin: 0;
-    height: 1000px;
 }
 
 /* Setup rows and columns */
@@ -61,11 +60,15 @@ body {
 [class*="col"] {
     float: left;
     padding: 15px;
-    border: 1px solid red;
 }
 
 .row::after {
     content: "";
     clear: both;
     display: table;
+}
+
+#activeLink {
+    color: #f1f1f1;
+    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
 }
