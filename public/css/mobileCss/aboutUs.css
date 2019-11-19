@@ -1,0 +1,11 @@
+.bigButton {
+    width: 80vw;
+    height: 50px;
+
+    padding: 5px;
+    margin: auto;
+
+    text-align: center;
+
+    background-color: red;
+}
