@@ -48,6 +48,7 @@ Generelle terminal kommandoer for mac:
         cd.. går ut av mappen.
         cd dittMappeNavn går inn i en mappe, eks cd Desktop for å navigere til skrivebord.
         Du kan også navigere flere mapper samtidig ved å gjøre feks: cd mappenavn/mappenavn/
+        Du kan også autocomplete kommandoer, eller se muligheter ved å trykke TAB i noen tilfeller.
 
 - 2: ls
         Lister alle mapper og filer i mappen du er i.
