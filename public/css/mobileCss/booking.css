@@ -1,0 +1,10 @@
+#navbar {
+    position: fixed;
+    width: 100%;
+}
+
+#logoImage {
+    width: 100px;
+    margin: auto;
+    display: block;
+}

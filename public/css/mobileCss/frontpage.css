@@ -8,6 +8,18 @@ h1 {
     color: black;
 }
 
+.bigButton {
+    width: 80vw;
+    height: 50px;
+
+    padding: 5px;
+    margin: auto;
+
+    text-align: center;
+
+    background-color: red;
+}
+
 /*.smartphone {
     position: relative;
     width: 360px;

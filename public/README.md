@@ -1,2 +1,4 @@
-ReadMe
-Description of project
+README:
+
+* Description of project
+* 
