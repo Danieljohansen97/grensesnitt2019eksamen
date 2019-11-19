@@ -38,4 +38,18 @@ Github kommandoer:
         Denne viser listen med "togskinner" ved siden av committs.
         Når du bruker denne kommandoen kommer du inn i VIM, for å lukke dette terminalvinduet skriver du :q! og trykker enter.
 
+- 9: git clone www.githubrepository.com
+        Kloner github repository, kopier linken fra github repo.
+
+Generelle terminal kommandoer for mac:
+
+- 1: cd 
+        kommando for å navigere gjennom mapper i terminalvinduet.
+        cd.. går ut av mappen.
+        cd dittMappeNavn går inn i en mappe, eks cd Desktop for å navigere til skrivebord.
+        Du kan også navigere flere mapper samtidig ved å gjøre feks: cd mappenavn/mappenavn/
+
+- 2: ls
+        Lister alle mapper og filer i mappen du er i.
+
 
