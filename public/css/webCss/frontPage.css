@@ -1,0 +1,52 @@
+body {
+    position: relative;
+    background-color: ffffff;
+
+}
+
+.headLine {
+    position: relative;
+    width: 100%;
+
+}
+
+#welcome {
+    position: absolute;
+    font-size: 35px;    
+    color: 000000;
+    margin-left: 250px;
+    margin-top: 85px;
+    text-align: center;
+}
+
+
+#hamburgerMenu {
+    display: block;
+    float: left;
+}
+
+.burgerMenuLine {
+    background-color: black;
+    width: 40px;
+    height: 5px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.infoBox {
+    width: 150px;
+    height: 450px;
+    position: fixed;
+    z-index: 1;
+    top: 100px;
+    left: 750px;
+    background: #eee;
+    overflow-x: hidden;
+    padding: 8px 0;
+  }
+
+  #appointments {
+      margin-left: 10px;
+      font-size: 13px;
+  }
+  
