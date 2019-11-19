@@ -52,4 +52,6 @@ Generelle terminal kommandoer for mac:
 - 2: ls
         Lister alle mapper og filer i mappen du er i.
 
+Hvis det ser ut som terminalen henger seg opp eller ikke responderer, så kan du prøve å trykke ctrl+z/ctrl+x/ctrl+c.
+Husker ikke hva de betydde, men de stopper hvertfall prosesser som kjører i terminalen.
 
