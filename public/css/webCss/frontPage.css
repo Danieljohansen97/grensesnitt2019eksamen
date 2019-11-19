@@ -1,0 +1,31 @@
+body {
+    position: relative;
+    background-color: ffffff;
+
+}
+
+.headLine {
+    position: absolute;
+    width: 90%;
+}
+
+#welcome {
+    position: absolute;
+    font-size: 30px;    
+    color: 000000;
+    margin-left: 200px;
+    margin-top: 70px;
+}
+
+#hamburgerMenu {
+    display: block;
+    float: left;
+}
+
+.burgerMenuLine {
+    background-color: black;
+    width: 40px;
+    height: 5px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
