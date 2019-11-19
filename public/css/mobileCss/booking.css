@@ -1,40 +1,45 @@
-body {
-    background-color: lightsalmon;
-    height: 2000px;
-    padding: 20px;
-}
+/* Navbar */
 #navbar {
-    position: fixed;
-    width: 100%;
+    background-color: rgb(39, 149, 164);
 }
 
-#logoImage {
-    width: 20%;
+
+.logoContainer {
+    text-align: center;
+}
+
+#logo {
+    max-width: 50px;
     margin: auto;
-    display: block;
 }
 
-#hamburgerMenu {
-    display: block;
-    float: left;
+/* Hamburger menu */
+#hamburgerMenuContainer {
+    height: 100%;
 }
 
-.burgerMenuLine {
-    background-color: black;
-    width: 40px;
-    height: 5px;
-    margin-bottom: 5px;
+.line1 {
+    width: 20px;
+    height: 3px;
     margin-top: 5px;
-}
-
-#userIcon {
-    display: block;
-    width: 50px;
-    height: 50px;
-
-    border-radius: 50%;
-
+    margin-bottom: 5px;
     background-color: black;
-
-    float: right;
 }
+
+.line2 {
+    width: 20px;
+    height: 3px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: black;
+}
+
+.line3 {
+    width: 20px;
+    height: 3px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: black;
+}
+
+
