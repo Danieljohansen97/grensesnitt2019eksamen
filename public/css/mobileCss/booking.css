@@ -1,10 +1,28 @@
+body {
+    background-color: lightsalmon;
+    height: 2000px;
+    padding: 20px;
+}
 #navbar {
     position: fixed;
     width: 100%;
 }
 
 #logoImage {
-    width: 100px;
+    width: 20%;
     margin: auto;
     display: block;
+}
+
+#hamburgerMenu {
+    display: block;
+    float: left;
+}
+
+.burgerMenuLine {
+    background-color: black;
+    width: 40px;
+    height: 5px;
+    margin-bottom: 5px;
+    margin-top: 5px;
 }
