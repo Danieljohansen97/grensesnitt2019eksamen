@@ -10,12 +10,6 @@ body {
     height: 300px;
 }
 
-#whiteContainer{
-    position: relative;
-    width: 300px;
-    background: pink;
-}
-
 .frontpageHeader {
     position: relative;
     background: whitesmoke;
