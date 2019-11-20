@@ -4,6 +4,7 @@ body {
 }
 
 #mainPic{
+    position: relative;
     background-color: #E7ECEF;
     width: 100%;
     height: 300px;
