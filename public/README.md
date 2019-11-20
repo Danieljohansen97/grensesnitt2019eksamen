@@ -1,5 +1,8 @@
 README:
-* Description of project
+* Dette er et prosjekt hvor vi skal utvikle en booking-løsning for studentklinikken ved Høgskolen Kristiania, løsningen skal være utviklet for mobil. Det skal også være en Desktop-basert løsning for ansatte, der de kan gå inn å få oversikt over, redigere, tildele bookingavtaler. Hovedfokuset er egentlig på design, brukervennlighet og universell utforming, men vi kommer også til å utvikle funksjonaliteten så godt det lar seg gjøre.
+
+* Link til github repo: https://github.com/Danieljohansen97/grensesnitt2019eksamen.git
+
 
 
 Github kommandoer:
@@ -37,7 +40,7 @@ Github kommandoer:
         Denne viser listen med "togskinner" ved siden av committs.
         Når du bruker denne kommandoen kommer du inn i VIM, for å lukke dette terminalvinduet skriver du :q! og trykker enter.
 
-- 9: git clone www.githubrepository.com
+- 9: git clone https://github.com/Danieljohansen97/grensesnitt2019eksamen.git
         Kloner github repository, kopier linken fra github repo.
 
 Generelle terminal kommandoer for mac:
