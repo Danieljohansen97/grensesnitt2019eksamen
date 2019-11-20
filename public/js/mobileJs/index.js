@@ -1,6 +1,6 @@
 // Hamburgermenu overlay
 function openOverlay() {
-    document.getElementById("myNav").style.width = "100%";
+    document.getElementById("myNav").style.width = "40%";
 }
   
 function closeOverlay() {
