@@ -2,6 +2,7 @@
 body {
     background-color: #ddd;
     margin: 0;
+    position: relative;
 }
 
 /* Setup rows and columns */
@@ -59,7 +60,7 @@ body {
 
 [class*="col"] {
     float: left;
-    padding: 15px;
+    padding: 0px;
 }
 
 .row::after {
@@ -79,8 +80,13 @@ body {
     width: 100%;
     background-color: rgb(39, 149, 164);
     margin: 0;
+    width: 100%;
     padding: 0;
+<<<<<<< HEAD
     z-index: 1;
+=======
+    position: fixed;
+>>>>>>> 283236b80102279b67791b25c75eae138ebc14c2
 }
 
 
@@ -90,6 +96,7 @@ body {
 
 #logo {
     max-width: 80px;
+    padding-top: 15px;
   
 }
 
