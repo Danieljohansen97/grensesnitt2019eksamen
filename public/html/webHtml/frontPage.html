@@ -11,44 +11,51 @@
 
 </head>
 <body>
-    <!-- Hamburgermenu overlay -->
-    <div id="myNav" class="overlay">
+
+<!-- Hamburgermenu overlay -->
+<div id="myNav" class="overlay">
         <!-- Button to close the overlay navigation -->
         <a href="javascript:void(0)" class="closebtn" onclick="closeOverlay()">&times;</a>    
-            <!-- Overlay content -->
-            <div class="overlay-content">
-                <a href="#">Hjem</a>
-                <a id="activeLink" href="treatments.html">Behandlinger og priser</a>
-                <a href="booking.html">Bestill time</a>
-                <a href="#">Om oss</a>
-            </div>      
-        </div>
-
-     <!---HAMBURGER MENY-->
-     <div id="hamburgerMenu" onclick="openOverlay()">
-            <div class="burgerMenuLine"></div>
-            <div class="burgerMenuLine"></div>
-            <div class="burgerMenuLine"></div>
-        </div>
-
-    <!--HEADER-->
-    <div class="headLine">
-        <h1 id="welcome">Velkommen, Kari Nordmann!</h1>
+        <!-- Overlay content -->
+        <div class="overlay-content">
+            <a href="#">Hjem</a>
+            <a href="treatments.html">Behandlinger og priser</a>
+            <a id="activeLink" href="booking.html">Bestill time</a>
+            <a href="#">Om oss</a>
+        </div>      
     </div>
+    <!-- NAVBAR MAIN DIV -->
+    <ul class="row" id="navbar">
+        <li class="col1" id="hamburgerMenuContainer" onclick="openOverlay()">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </li>
+        <li class="logoContainer col10">
+            <a href="frontpage.html"><img id="logo" src="https://kristiania.no/content/2015/12/logo.png"></a>
+        </li>
+        <li class="col1">
+        </li>
+    </ul>
 
-    <!--SIDEBAR-->    
-    <div class="sideBar">
+    <!-- CONTENT MAIN DIV -->
+
+    
+
+    <div class="row" id="content">
+            <div id="headLine" class="col12">
+                <h2>Velkommen, Kari Nordmann!</h2>
+            </div>
+
+    
+    
+    
+
+
+    <!-- FOOTER MAIN DIV -->
+    <div id="footer">
+        
     </div>
-
-    <!--CALENDER/SHIFTPLAN-->
-    <div class="shiftPlan">
-    </div>
-
-    <!--INFOBOX-->
-    <div class="infoBox">
-        <h3 id="appointments">Oppkommende avtaler</h3>
-    </div>
-
 
     <script src="/public/js/webJs/index.js" type="text/javascript"></script>
 </body>
