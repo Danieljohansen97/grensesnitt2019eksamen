@@ -10,6 +10,12 @@ body {
     height: 300px;
 }
 
+#whiteContainer{
+    position: relative;
+    width: 300px;
+    background: pink;
+}
+
 .frontpageHeader {
     position: relative;
     background: whitesmoke;
@@ -24,10 +30,9 @@ body {
     padding-right: 20px;
 }
 
-#aboutImage{
-    position: relative;  
-    background: pink;  
-    width: 100%;
+
+#about{
+    
 }
 
 #treatment {
