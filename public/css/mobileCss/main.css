@@ -141,7 +141,7 @@ body {
   .overlay a {
     padding: 8px;
     text-decoration: none;
-    font-size: 8vw;
+    font-size: 3vw;
     color: #818181;
     display: block; /* Display block instead of inline */
     transition: 0.3s; /* Transition effects on hover (color) */

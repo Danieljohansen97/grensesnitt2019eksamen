@@ -16,14 +16,16 @@ body {
     height: 400px;
     text-align: left;
     font-family: helvetica;
-    padding-left: 35px;
     margin: auto;
     margin-top: 20px;
     margin-bottom: 20px;
+    padding: 20px;
 }
 
-#about{
-    
+#aboutImage{
+    position: relative;  
+    background: pink;  
+    width: 100%;
 }
 
 #treatment {
