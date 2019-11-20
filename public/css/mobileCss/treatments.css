@@ -1,0 +1,14 @@
+.treatmentHeader {
+    background-color: lightskyblue;
+    text-align: center;
+    font-family: helvetica;
+}
+.treatmentBody {
+    background-color: white;
+    padding: 2%;
+    text-align: justify;
+}
+
+.hideBody {
+    display: none;
+}

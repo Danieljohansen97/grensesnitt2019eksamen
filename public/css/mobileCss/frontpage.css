@@ -1,26 +1,78 @@
 body {
-    background: cadetblue;
+    position: static;
+    background: #A0B3C1;
 }
 
+#mainPic{
+    background-color: #E7ECEF;
+    width: 100%;
+    height: 300px;
+}
 
-h1 {
+.frontpageHeader {
     position: relative;
-    color: black;
-}
-
-.bigButton {
-    width: 80vw;
-    height: 50px;
-
-    padding: 5px;
+    background: whitesmoke;
+    width: 70%;
+    height: 400px;
+    text-align: left;
+    font-family: helvetica;
+    padding-left: 35px;
     margin: auto;
-
-    text-align: center;
-
-    background-color: red;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-/*.smartphone {
+#about{
+    
+}
+
+#treatment {
+   
+}
+#booking {
+    
+}
+
+.contentButton{
+    position: relative;
+    top: 80%;
+    color: white;
+    background-color: #7E9DAD;
+    padding: 14px 25px;
+    text-decoration: none;
+}
+
+#footer{
+    background-color: #E7ECEF;
+    width: 100%;
+    height: 250px;
+}
+
+/*
+
+ width: 300px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
+
+.col12 {
+    width: 100%;
+}
+
+[class*="col"] {
+    float: left;
+    padding: 15px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+
+.smartphone {
     position: relative;
     width: 360px;
     height: 640px;

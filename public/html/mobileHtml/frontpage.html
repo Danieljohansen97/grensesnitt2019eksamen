@@ -2,29 +2,71 @@
 <html>
     <head>
         <title>FrontPage</title>
+        <link href="/public/css/mobileCss/main.css" type="text/css" rel="stylesheet">
         <link href="/public/css/mobileCss/frontpage.css" type="text/css" rel="stylesheet">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <!-- NAVBAR MAIN DIV -->
-        <div id="navbar">
-            <div id="menuBar">
-            </div>
-            <div id="logo">
-                <img src="https://kristiania.no/content/2015/12/logo.png">
-            </div>
-        </div>
-
+        <nav>
+            <!-- Hamburgermenu overlay -->
+            <div id="myNav" class="overlay">
+                <!-- Button to close the overlay navigation -->
+                <a href="javascript:void(0)" class="closebtn" onclick="closeOverlay()">&times;</a>    
+                <!-- Overlay content -->
+                <div class="overlay-content">
+                    <a href="frontpage.html">Hjem</a>
+                    <a id="activeLink" href="treatments.html">Behandlinger og priser</a>
+                    <a href="booking.html">Bestill time</a>
+                    <a href="aboutUs.html">Om oss</a>
+                </div>      
+                </div>
+            <!-- NAVBAR MAIN DIV -->
+            <ul class="row" id="navbar">
+                <li class="col1" id="hamburgerMenuContainer" onclick="openOverlay()">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </li>
+                <li class="logoContainer col10">
+                    <img id="logo" src="https://kristiania.no/content/2015/12/logo.png">
+                </li>
+                <li class="col1">
+                </li>
+            </ul>
+        </nav>
+        
         <!-- CONTENT MAIN DIV -->
-        <div id="content">
+        <main>
+            <div id="mainPic">
+
+            </div>
+
+            <div id="about" class="frontpageHeader">
+                <!--<img src="/public/pictures/Studentklinikken.png" width="80%" >-->
+                <a class="contentButton" href="aboutUs.html">Om Oss</a>
+            </div>
+
+            <div id="treatment" class="frontpageHeader">
+                <a class="contentButton" href="treatments.html">Behandlinger & Priser</a>
+            </div>
+
+            <div id="booking" class="frontpageHeader">
+                <a class="contentButton" href="booking.html">Bestill Time</a>
+            </div>
+
+        </main>
+       
+       
+       
+        <!--<div id="content">
                 <div class="bigButton" id="aboutUsButton"><a href="aboutUs.html">Om oss</a></div>
-        </div>
+        </div>-->
 
         <!-- FOOTER MAIN DIV -->
         <div id="footer">
 
         </div>
-
+        <script src="/public/js/mobileJs/index.js" type="text/javascript"></script>
     </body>
 </html>
