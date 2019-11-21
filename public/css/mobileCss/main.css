@@ -1,15 +1,29 @@
 /* Core CSS */
-body {
-    background-color: #ddd;
-    margin: 0;
-    position: relative;
-}
-
-/* Setup rows and columns */
 * {
     box-sizing: border-box;
 }
 
+*:before,
+*::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+.mainContainer {
+    min-height: 100vh; /* will cover the 100% of viewport */
+    overflow: hidden;
+    display: block;
+    position: relative;
+    padding-bottom: 93vh; /* height of your footer */
+   }
+
+/* Setup rows and columns */
 .col1 {
     width: 8.33%;
 }
