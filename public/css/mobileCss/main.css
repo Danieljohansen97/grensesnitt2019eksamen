@@ -100,6 +100,7 @@ body {
 /* Hamburger menu */
 #hamburgerMenuContainer {
     padding: 15px;
+    padding: 1% auto 1% auto;
 }
 
 #hamburgerMenuContainer:hover [class*="line"] {
@@ -111,9 +112,9 @@ body {
 }
 
 .line1, .line2, .line3 {
-    width: 35px;
+    width: 30px;
     height: 4px;
-    margin-top: 5px;
+    margin: 5px auto 0 auto;
     background-color: black;
 }
 
