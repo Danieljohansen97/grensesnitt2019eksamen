@@ -14,10 +14,10 @@
             <a href="javascript:void(0)" class="closebtn" onclick="closeOverlay()">&times;</a>    
             <!-- Overlay content -->
             <div class="overlay-content">
-                <a href="frontpage.html">Hjem</a>
-                <a href="treatments.html">Behandlinger og priser</a>
-                <a id="activeLink" href="booking.html">Bestill time</a>
-                <a href="aboutUs.html">Om oss</a>
+                <a href="/public/index.html">Hjem</a>
+                <a href="/public/html/mobileHtml/treatments.html">Behandlinger og priser</a>
+                <a id="activeLink" href="/public/html/mobileHtml/booking.html">Bestill time</a>
+                <a href="/public/html/mobileHtml/aboutUs.html">Om oss</a>
             </div>      
         </div>
         <!-- NAVBAR MAIN DIV -->
@@ -28,7 +28,7 @@
                 <div class="line3"></div>
             </li>
             <li class="logoContainer col8">
-                <a href="frontpage.html"><img id="logo" src="https://kristiania.no/content/2015/12/logo.png"></a>
+                <a href="/public/html/mobileHtml/frontpage.html"><img id="logo" src="https://kristiania.no/content/2015/12/logo.png"></a>
             </li>
             <li class="col2">
                 <!-- Button that is visible if not logged in -->
@@ -48,5 +48,27 @@
         </div>
         <script src="/public/js/mobileJs/index.js" type="text/javascript"></script>
         <script src="/public/js/mobileJs/booking.js" type="text/javascript"></script>
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+        <!-- Firebase SDKs --> 
+        <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-analytics.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-firestore.js"></script>
+        
+        <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyB9hDcu_H8U-XYC7f4PaiLzzxWTT4cppGk",
+            authDomain: "sk-devbuild.firebaseapp.com",
+            databaseURL: "https://sk-devbuild.firebaseio.com",
+            projectId: "sk-devbuild",
+            storageBucket: "sk-devbuild.appspot.com",
+            messagingSenderId: "480822561643",
+            appId: "1:480822561643:web:4ce91c54c055f3ad815a2e",
+            measurementId: "G-P2KJPWCB9E"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+        </script>
     </body>
 </html>
