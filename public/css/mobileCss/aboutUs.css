@@ -1,0 +1,31 @@
+#content {
+    height: 100vh;
+    background-color: #A0B3C1;
+    padding-left: 8%;
+}
+
+.aboutusHeader {
+    background-color: #7E9DAD;
+    text-align: center;
+    color: black;
+    font-family: helvetica;
+    margin-bottom: 5px;
+    width: 90%;
+}
+
+.aboutusBody {
+    background-color: #E7ECEF;
+    padding: 2%;
+    text-align: justify;
+}
+
+.hideBody {
+    display: none;
+}
+
+#th1 {
+    margin-top: 57px;
+}
+#tb1 {
+    margin-top: 50px;
+}
