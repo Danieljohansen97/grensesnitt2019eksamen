@@ -1,21 +1,15 @@
-#content {
-    height: 100vh;
-    background-color: #A0B3C1;
-    padding-left: 8%;
-}
-
 .aboutusHeader {
-    background-color: #7E9DAD;
+    background-color: #CCDAE1;
     text-align: center;
     color: black;
     font-family: helvetica;
-    margin-bottom: 5px;
+    margin-bottom: 15%;
     width: 90%;
 }
 
 .aboutusBody {
-    background-color: #E7ECEF;
-    padding: 2%;
+    background-color: #CCDAE1;
+    padding: 3%;
     text-align: justify;
 }
 
@@ -28,4 +22,8 @@
 }
 #tb1 {
     margin-top: 50px;
+}
+
+#content {
+    padding-left: 8%;
 }
