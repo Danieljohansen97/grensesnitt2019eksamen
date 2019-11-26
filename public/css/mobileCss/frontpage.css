@@ -14,15 +14,22 @@ body {
 .frontpageHeader {
     position: relative;
     background: whitesmoke;
-    width: 70%;
-    height: 300px;
+    width: 80%;
+    height: 200px;
     text-align: center;
     font-family: helvetica;
     margin: auto;
-    margin-top: 20px;
     margin-bottom: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
+}
+
+.contentButton{
+    position: relative;
+    top: 80%;
+    color: white;
+    background-color: #7E9DAD;
+    font-size: 2.5vw;;
+    padding: 14px 25px;
+    text-decoration: none;
 }
 
 #frontPageImageThing {
@@ -42,16 +49,6 @@ body {
     font-size: 7vw;
     position: relative;
     top: 30px;
-}
-
-.contentButton{
-    position: relative;
-    top: 80%;
-    color: white;
-    background-color: #7E9DAD;
-    padding: 14px 25px;
-    text-decoration: none;
-    margin: auto;
 }
 
 
