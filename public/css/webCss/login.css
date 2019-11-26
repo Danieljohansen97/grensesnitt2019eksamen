@@ -1,0 +1,67 @@
+body{
+  display: grid;
+  margin: 0;
+  padding: 0;
+  background:#9BB9BF;
+  font-family:'Montserrat', sans-serif;
+}
+
+.loginBox{
+  background: #181D21;
+  opacity: 80%;
+  width: 300px;
+  padding: 40px;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+
+}
+.loginBox h1{
+  color: #B2CBD4;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.loginBox input[type = "text"],.loginBox input[type = "password"]{
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #88A5BF;
+  padding: 14px 10px;
+  width: 200px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+
+}
+
+.loginBox input[type = "text"]:focus,.loginBox input[type = "password"]{
+  width: 250px;
+  color:#ffffff;
+}
+
+.loginBox input[type = "submit"]{
+
+   border: 0;
+   background: none;
+   display: block;
+   margin: 20px auto;
+   text-align: center;
+   border: 2px solid #88A5BF;
+   padding: 14px 10px;
+   width: 200px;
+   outline: none;
+   color: white;
+   border-radius: 24px;
+   transition: ;
+  
+}
+
+.loginBox h1{
+  color: #ffffff;
+}
