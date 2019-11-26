@@ -1,117 +1,4 @@
-/* Core CSS */
-* {
-    box-sizing: border-box;
-}
 
-*:before,
-*::after {
-    box-sizing: border-box;
-}
-
-html, body {
-    height: 100%;
-    position: relative;
-    padding: 0;
-    margin: 0;
-    background-color: #fff;
-    font-family: HelveticaNeue-Light;
-}
-
-.mainContainer {
-    min-height: 100vh; /* will cover the 100% of viewport */
-    overflow: hidden;
-    display: block;
-    position: relative;
-    padding-bottom: 93vh; /* height of your footer */
-   }
-
-/* Setup rows and columns */
-.col1 {
-    width: 8.33%;
-}
-
-.col2 {
-    width: 16.66%;
-}
-
-.col3 {
-    width: 25%;
-}
-
-.col4 {
-    width: 33.33%;
-}
-
-.col5 {
-    width: 41.66%;
-}
-
-.col6 {
-    width: 50%;
-}
-
-.col7 {
-    width: 58.33%;
-}
-
-.col8 {
-    width: 66.66%;
-}
-
-.col9 {
-    width: 75%;
-}
-
-.col10 {
-    width: 83.33%;
-}
-
-.col11 {
-    width: 91.66%;
-}
-
-.col12 {
-    width: 100%;
-}
-
-[class*="col"] {
-    float: left;
-    padding: 0px;
-}
-
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-#activeLink {
-    color: #f1f1f1;
-    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
-}
-
-/* Navbar */
-#navbar {
-    background-color: rgb(39, 149, 164);
-    margin: 0;
-    padding: 0;
-    position: fixed;
-    width: 100%;
-}
-
-
-.logoContainer {
-    text-align: center;
-}
-
-#logo {
-    max-width: 80px;
-  
-}
-
-#headLine {
-    text-align: center;
-}
 
 /* Hamburger menu */
 #hamburgerMenuContainer {
@@ -119,7 +6,7 @@ html, body {
 }
 
 #hamburgerMenuContainer:hover [class*="line"] {
-    background-color: white;
+    background-color: #6E7376;
 }
 
 #navbar li {

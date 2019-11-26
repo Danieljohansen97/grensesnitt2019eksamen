@@ -12,68 +12,31 @@
 
 </head>
 <body>
-    <div class="mainContainer">
-        <div class="row"><!-- Start of outer row -->
-            <div class="col10"><!-- Start of outer col10 -->
-            <!-- Hamburgermenu overlay -->
-                <div id="myNav" class="overlay">
-                    <!-- Button to close the overlay navigation -->
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeOverlay()">&times;</a>    
-                    <!-- Overlay content -->
-                    <div class="overlay-content">
-                        <a href="frontPage.html">Shiftplan</a>
-                        <a href="contacts.html">Kontaktliste</a>
-                        <a id="activeLink" href="litterature.html">Litteratur</a>
-                        <a href="patientsView.html">Pasient oversikt</a>
-                    </div>      
-                </div>
-                <!-- NAVBAR MAIN DIV -->
-                <ul class="row" id="navbar">
-                    <li class="col2" id="hamburgerMenuContainer" onclick="openOverlay()">
-                        <div class="line1"></div>
-                        <div class="line2"></div>
-                        <div class="line3"></div>
-                    </li>
-                    <li class="logoContainer col10">
-                        <a href="frontpage.html"><img id="logo" src="https://kristiania.no/content/2015/12/logo.png"></a>
-                    </li>
-                </ul>
-
-                <!-- CONTENT MAIN DIV -->
-            
-                <div class="row">
-                    <div class="dropdown">
-                        <button class="col12 dropbtn">Pasient oversikt</button>
-                        <div class="dropdown-content">
-                            <a href="#">Pasient 1</a>
-                            <a href="#">Pasient 2</a>
-                            <a href="#">Pasient 3</a>
-                            <a href="#">Pasient 4</a>
-                        </div>
-                    </div>
-                </div>
-                
-                    <div class="row">
-                        <button id="myBtn" class="btn"> + Legg til ny pasient</button>
-                    </div>
-
-                    <!-- The Modal -->
-                    <div id="myModal" class="modal">
-                        <!-- Modal content -->
-                        <div class="modal-content">
-                            <span class="close">&times;</span>
-                            <p>Some text in the Modal..</p>
-                        </div>
-                    </div>
-                
-                <!-- FOOTER MAIN DIV -->
-                <div id="footer">       
-                </div>
-            </div><!-- End of outer col10 -->
+        <header id="topNav">
+                <img src="/images/logoHvit.png" alt="logo">
+                <h2>Pasientoversikt</h2>
+            </header>
         
-            <!-- Cols add upp to 12 -->
-        </div><!-- End of outer row -->
-    </div>
+            <article id="mainContent">
+
+                    <div class="dropdown">
+                            <button class="dropbtn">Dropdown</button>
+                            <div class="dropdown-content">
+                            <a href="#">Nora Wilfadt</a>
+                            <a href="#">Tea Olivia Bråthen</a>
+                            <a href="#">Espen Eriksen</a>
+                            </div>
+                          </div>
+                    
+
+            </article>
+           
+                                
+                    
+            <nav id="sideNav">
+            </nav>
+            <div id="notes"></div>
+            <footer id="footer"></footer>
     <script src="/public/js/webJs/index.js" type="text/javascript"></script>
     <script src="/public/js/webJs/patientsView.js" type="text/javascript"></script>
 </body>
