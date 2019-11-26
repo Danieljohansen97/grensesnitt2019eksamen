@@ -1,3 +1,4 @@
+
 // DOMContentLoaded function
 document.addEventListener("DOMContentLoaded", () => {
     console.log("DOMContentLoaded.");
@@ -8,6 +9,7 @@ var userModal = document.getElementById("userModal");
 var userModalBtn = document.getElementById("userModalBtn");
 var loginModal = document.getElementById("loginModal");
 var loginModalBtn = document.getElementById("loginModalBtn");
+var loginModalBtn2 = document.getElementById("loginModalBtn2");
 var registerModal = document.getElementById("registerModal");
 var registerModalBtn = document.getElementById("registerModalBtn");
 
@@ -24,6 +26,12 @@ userModalBtn.onclick = function() {
 }
 
 loginModalBtn.onclick = function() {
+  loginModal.style.display = "block";
+  registerModal.style.display = "none";
+  userModal.style.display = "none";
+}
+
+loginModalBtn2.onclick = function() {
   loginModal.style.display = "block";
   registerModal.style.display = "none";
   userModal.style.display = "none";

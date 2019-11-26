@@ -38,6 +38,15 @@
     border: 1px solid #CCDAE1;
 }
 
+.modal button {
+    text-align: center;
+    padding: 10px;
+    font-size: 2vw;
+    background-color: rgba(0,0,0,0.0);
+    color: #CCDAE1;
+    border: 1px solid #CCDAE1;
+}
+
 .modal .button:hover {
     border-color: green;
     color: green;
