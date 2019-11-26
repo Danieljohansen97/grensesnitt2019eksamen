@@ -2,10 +2,14 @@
 #modalBtn {
     width: 100%;
     height: 57px;
-    background-color: rgb(39, 149, 164);
     border: none;
-    font-family: Arial, Helvetica, sans-serif;
+    background-color: #004358;
+    color: #CCDAE1;
     font-size: 2.5vw;
+}
+
+#modalBtn:hover {
+    cursor: pointer;
 }
 
 .modal {
@@ -19,6 +23,7 @@
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    color: #CCDAE1;
 }
 
 .modal-content {
