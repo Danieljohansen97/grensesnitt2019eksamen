@@ -15,11 +15,14 @@ signupForm.addEventListener("submit", (e) => {
     // Get user info from form
     const email = signupForm["signupEmail"].value;
     const password = signupForm["signupPassword"].value;
-    const firstName = signupForm["signupFirstName"].value;
-    const lastName = signupForm["signupLastName"].value;
 
     // Sign up the user
     auth.createUserWithEmailAndPassword(email, password).then(cred => {
+        return db.collection("users").doc(cred.user.uid).set({
+            name: signupForm["signupName"].value,
+            comment: signupForm["signupComment"].value
+        });
+    }).then(() => {
         // Close modal and reset form
         const modal = document.getElementById("registerModal");
         modal.style.display = "none";
