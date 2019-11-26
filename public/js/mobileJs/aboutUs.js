@@ -1,7 +1,7 @@
 // DOMContentLoaded
 document.addEventListener("DOMContentLoaded", () => {
     console.log("DOMContentLoaded.");
-    // Toggle treatmentBody
+    // Toggle aboutBody
     // Needs refactoring
     document.getElementById("th1").addEventListener("click", () => {
         document.getElementById("tb1").classList.toggle("hideBody");
