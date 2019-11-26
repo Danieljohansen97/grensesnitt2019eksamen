@@ -44,17 +44,6 @@ body {
     top: 30px;
 }
 
-#about{
-    
-}
-
-#treatment {
-   
-}
-#booking {
-    
-}
-
 .contentButton{
     position: relative;
     top: 80%;
@@ -65,74 +54,4 @@ body {
     margin: auto;
 }
 
-#footer{
-    background-color: #E7ECEF;
-    width: 100%;
-    height: 250px;
-}
 
-/*
-
- width: 300px;
-  border: 15px solid green;
-  padding: 50px;
-  margin: 20px;
-
-.col12 {
-    width: 100%;
-}
-
-[class*="col"] {
-    float: left;
-    padding: 15px;
-}
-
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-
-
-.smartphone {
-    position: relative;
-    width: 360px;
-    height: 640px;
-    margin: auto;
-    border: 16px black solid;
-    border-top-width: 60px;
-    border-bottom-width: 60px;
-    border-radius: 35px;
-}
-.smartphone:before {
-    content: '';
-    display: block;
-    width: 60px;
-    height: 5px;
-    position: absolute;
-    top: -30px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: #333;
-    border-radius: 10px;
-}
-
-.smartphone:after {
-    content: '';
-    display: block;
-    width: 35px;
-    height: 35px;
-    position: absolute;
-    left: 50%;
-    bottom: -65px;
-    transform: translate(-50%, -50%);
-    background:#333;
-    border-radius: 50%;
-}
-
-.smartphone .phoneContent {
-    width: 360px;
-    height: 640px;
-    background: white;
-}*/

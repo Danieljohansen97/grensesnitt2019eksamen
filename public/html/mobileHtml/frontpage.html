@@ -8,72 +8,86 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <nav>
-            <!-- Hamburgermenu overlay -->
-            <div id="myNav" class="overlay">
-                <!-- Button to close the overlay navigation -->
-                <a href="javascript:void(0)" class="closebtn" onclick="closeOverlay()">&times;</a>    
-                <!-- Overlay content -->
-                <div class="overlay-content">
-                    <a id="activeLink" href="/public/html/mobileHtml/frontpage.html">Hjem</a>
-                    <a href="/public/html/mobileHtml/treatments.html">Behandlinger og priser</a>
-                    <a href="/public/html/mobileHtml/booking.html">Bestill time</a>
-                    <a href="/public/html/mobileHtml/aboutUs.html">Om oss</a>
-                </div>      
-                </div>
-            <!-- NAVBAR MAIN DIV -->
-            <ul class="row" id="navbar">
-                <li class="col1" id="hamburgerMenuContainer" onclick="openOverlay()">
-                    <div class="line1"></div>
-                    <div class="line2"></div>
-                    <div class="line3"></div>
-                </li>
-                <li class="logoContainer col10">
-                    <img id="logo" src="https://kristiania.no/content/2015/12/logo.png">
-                </li>
-                <li class="col1">
-                </li>
-            </ul>
-        </nav>
-        
-        <!-- CONTENT MAIN DIV -->
-        <main>
-            <div class="row">
-                <div class="col12">
-                    <div id="frontPageImageThing">
-                       <!--- <h2 id="imageText">STUDENTKLINIKKEN</h2>-->
+        <div class="mainContainer">
+            <nav>
+                <!-- Hamburgermenu overlay -->
+                <div id="myNav" class="overlay">
+                    <!-- Button to close the overlay navigation -->
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeOverlay()">&times;</a>    
+                    <!-- Overlay content -->
+                    <div class="overlay-content">
+                        <a id="activeLink" href="/public/html/mobileHtml/frontpage.html">Hjem</a>
+                        <a href="/public/html/mobileHtml/treatments.html">Behandlinger og priser</a>
+                        <a href="/public/html/mobileHtml/booking.html">Bestill time</a>
+                        <a href="/public/html/mobileHtml/aboutUs.html">Om oss</a>
+                    </div>      
                     </div>
-                </div>
-            </div>
-            <!--About Us-->
-            <div class="row">
-                <div class="col12">
-                    <div id="about" class="frontpageHeader">
-                        <a class="contentButton" href="/public/html/mobileHtml/aboutUs.html">Om Oss</a>
-                    </div>
-                </div>
-            </div>
-            <!--Treatment-->
-            <div class="row">
-                <div class="col12">
-                    <div id="treatment" class="frontpageHeader">
-                        <a class="contentButton" href="/public/html/mobileHtml/treatments.html">Behandlinger & Priser</a>
-                    </div>
-                </div>
-            </div>
-            <!--Bookings-->
-            <div class="row">
-                <div class="col12">
-                    <div id="booking" class="frontpageHeader">
-                        <a class="contentButton" href="/public/html/mobileHtml/booking.html">Bestill Time</a>
-                    </div>
-                </div>
-            </div>
-        </main>
-
-        <!-- FOOTER MAIN DIV -->
-        <div id="footer">
+                <!-- NAVBAR MAIN DIV -->
+                <ul class="row" id="navbar">
+                    <li class="col1" id="hamburgerMenuContainer" onclick="openOverlay()">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
+                    </li>
+                    <li class="logoContainer col10">
+                        <img id="logo" src="https://kristiania.no/content/2015/12/logo.png">
+                    </li>
+                    <li class="col1">
+                    </li>
+                </ul>
+            </nav>
             
+            <!-- CONTENT MAIN DIV -->
+            <main>
+                <div class="row">
+                    <div class="col12">
+                        <div id="frontPageImageThing">
+                        <h2 id="imageText">STUDENTKLINIKKEN</h2>
+                        </div>
+                    </div>
+                </div>
+                <!--About Us-->
+                <div class="row">
+                    <div class="col12">
+                        <div id="about" class="frontpageHeader">
+                            <a class="contentButton" href="/public/html/mobileHtml/aboutUs.html">Om Oss</a>
+                        </div>
+                    </div>
+                </div>
+                <!--Treatment-->
+                <div class="row">
+                    <div class="col12">
+                        <div id="treatment" class="frontpageHeader">
+                            <a class="contentButton" href="/public/html/mobileHtml/treatments.html">Behandlinger & Priser</a>
+                        </div>
+                    </div>
+                </div>
+                <!--Bookings-->
+                <div class="row">
+                    <div class="col12">
+                        <div id="booking" class="frontpageHeader">
+                            <a class="contentButton" href="/public/html/mobileHtml/booking.html">Bestill Time</a>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <!-- FOOTER MAIN DIV -->
+            <div id="footer">
+                <div class="row">
+                    <div class="col6">
+                        <h5>Kontaktinformasjon</h5>
+                        <p>TLF: 971 17 690</p>
+                        <p>E-post: studentklinikken@kristiania.no</p>
+                    </div>
+                    <div class="col6">
+                        <h5>Eksterne sider</h5>
+                        <a href="https://kristiania.no/">Høgskolen Kristiania</a>
+                        <br>
+                        <a href="https://kristiania.no/studentklinikken/">Studentklinikken</a>
+                    </div>
+                </div>
+            </div>
         </div>
         <script src="/public/js/mobileJs/index.js" type="text/javascript"></script>
     </body>
