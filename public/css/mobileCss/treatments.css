@@ -1,20 +1,14 @@
 /* Content */
-#content {
-    height: 100vh;
-    background-color: #A0B3C1;
-    padding-left: 8%;
-}
-
 .treatmentHeader {
-    background-color: #7E9DAD;
+    background-color: #CCDAE1;
     text-align: center;
     color: black;
-    margin-bottom: 5px;
+    margin-bottom: 15%;
     width: 90%;
 }
 
 .treatmentBody {
-    background-color: #E7ECEF;
+    background-color: #CCDAE1;
     padding: 2%;
     text-align: justify;
 }
@@ -25,4 +19,8 @@
 
 #th1 {
     margin-top: 57px;
+}
+
+#content {
+    padding-left: 8%;
 }

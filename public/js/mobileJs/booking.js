@@ -3,28 +3,45 @@ document.addEventListener("DOMContentLoaded", () => {
     console.log("DOMContentLoaded.");
 });
 
-// Get the modal
-var modal = document.getElementById("loginModal");
-
-// Get the button that opens the modal
-var btn = document.getElementById("modalBtn");
+// Get the modals and buttons
+var userModal = document.getElementById("userModal");
+var userModalBtn = document.getElementById("userModalBtn");
+var loginModal = document.getElementById("loginModal");
+var loginModalBtn = document.getElementById("loginModalBtn");
+var registerModal = document.getElementById("registerModal");
+var registerModalBtn = document.getElementById("registerModalBtn");
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+var userClose = document.getElementsByClassName("close")[0];
+var loginClose = document.getElementsByClassName("close")[1];
+var registerClose = document.getElementsByClassName("close")[2];
 
 // When the user clicks on the button, open the modal
-btn.onclick = function() {
-  modal.style.display = "block";
+userModalBtn.onclick = function() {
+  userModal.style.display = "block";
+  loginModal.style.display = "none";
+  registerModal.style.display = "none";
+}
+
+loginModalBtn.onclick = function() {
+  loginModal.style.display = "block";
+  registerModal.style.display = "none";
+  userModal.style.display = "none";
+}
+
+registerModalBtn.onclick = function() {
+  registerModal.style.display = "block";
+  loginModal.style.display = "none";
+  userModal.style.display = "none";
 }
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
+userClose.onclick = function() {
+  userModal.style.display = "none";
 }
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
+loginClose.onclick = function() {
+  loginModal.style.display = "none";
+}
+registerClose.onclick = function() {
+  registerModal.style.display = "none";
 }
