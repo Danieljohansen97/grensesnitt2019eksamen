@@ -22,9 +22,15 @@ body{
   float: left;
   height: 25px;
   width: 35px;
-  margin-top: -10px;
+  margin-top: -50px;
+  margin-left: 2%;
   
 }
+
+#headLine {
+  margin-left: 10%;
+}
+
 #topNav h2{
   
   color: white;
