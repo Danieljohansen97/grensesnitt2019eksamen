@@ -220,3 +220,86 @@ html, body {
     font-size: 2.5vw;
     color: #CCDAE1;
 }
+
+/* Modal */
+#userModalBtn {
+    width: 100%;
+    height: 57px;
+    border: none;
+    background-color: #004358;
+    color: #CCDAE1;
+    font-size: 2.5vw;
+}
+
+#userModalBtn:hover {
+    cursor: pointer;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 57px;
+    width: 100%; /* Full width */
+    height: auto; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    color: #CCDAE1;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.modal form input{
+    width: 40%;
+    margin-bottom: 5%;
+    text-align: center;
+    padding: 10px;
+    font-size: 2vw;
+    background-color: rgba(0,0,0,0.0);
+    color: #CCDAE1;
+    border: 1px solid #CCDAE1;
+}
+
+.modal button {
+    text-align: center;
+    padding: 10px;
+    font-size: 2vw;
+    background-color: rgba(0,0,0,0.0);
+    color: #CCDAE1;
+    border: 1px solid #CCDAE1;
+}
+
+.modal .button:hover {
+    border-color: green;
+    color: green;
+}
+
+.modal-content {
+    background-color: #CCDAE1;
+    border: 1px solid #888;
+}
+
+.close {
+    color: #CCDAE1;
+    font-size: 8vw;
+    font-weight: bold;
+}
+
+.close:hover {
+    cursor: pointer;
+}
+
+/* log in and register stuff */
+.button {
+    border: 1px solid #CCDAE1;
+    border-radius: 10%;
+    width: 30vw;
+    height: 50px;
+    padding-top: 15px;
+    margin: auto;
+}
+
+.button:hover {
+    cursor: pointer;
+}
