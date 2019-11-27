@@ -6,7 +6,7 @@ body{
   "footer footer footer";
   grid-template-rows: 60px 1fr 60px;
   grid-template-columns: 12% 1fr 15%;
-  background: #CCDAE1;
+  background: #eee;
   height: 100vh;
   margin: 0;
   font-family: HelveticaNeue-Light;
@@ -14,7 +14,7 @@ body{
 #topNav{
   grid-area: header;
   color: white;
-  background: #87A8B7;
+  background: #606b75;
   text-align: center;
 }
 #topNav .menuIcon img{
@@ -28,7 +28,7 @@ body{
 #topNav h2{
   
   color: white;
-  display: inline;
+  text-align: center;
 }
 #topNav img{
   float: right;
@@ -39,7 +39,7 @@ body{
 }
 #sideNav{
   grid-area: nav;
-  background: #ffffff;
+  background:#eee;
   opacity: 80%;
 }
 #mainContent{
@@ -52,7 +52,7 @@ body{
 }
 #footer{
   grid-area: footer;
-  background:#87A8B7;
+  background:#606b75;
 }
 
 /* Hamburgermenu overlay */
@@ -101,4 +101,84 @@ body{
   top: 2px;
   right: 10%;
   font-size: 60px;
+  
+}
+
+/*calendar*/
+ul {list-style-type: none;}
+
+
+/* Month header */
+.month {
+  padding: 70px 25px;
+  width: 100%;
+  background: #606b75;
+  text-align: center;
+}
+
+/* Month list */
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+/* Previous button inside month header */
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+
+/* Next button */
+.month .next {
+  float: right;
+  padding-top: 10px;
+}
+
+/* Weekdays (Mon-Sun) */
+.weekdays {
+  margin: 0;
+  padding: 10px 0;
+  background-color:#ddd;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  color: #666;
+  text-align: center;
+}
+
+/* Days (1-31) */
+.days {
+  padding: 10px 0;
+  background: #eee;
+  margin: 0;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 50px;
+  font-size:15px;
+  color: #777;
+}
+
+/* Highlight the "current" day */
+.days li .active {
+  padding: 5px;
+  background: #1abc9c;
+  color: white !important
+}
+
+#sunday {
+  color: red;
 }
