@@ -86,10 +86,7 @@ if (showName !== "") {
     
     orderBtn4.addEventListener("click", (e) => {
         e.preventDefault();
-
         treatment.comment = document.querySelector("#treatmentComment").value;
-        console.log(treatment);
-
         db.collection("bookings").add({
             treatment: treatment.type,
             patient: showEmail.innerHTML,
@@ -97,7 +94,19 @@ if (showName !== "") {
             time: treatment.time,
             comment: treatment.comment
         });
-
+        
+        // Confirmation info
+        document.querySelector("#bookingConfirmation").innerHTML = "Timebestilling sendt!" +
+        "<br><br>" + 
+        "Behandling: " + treatment.type +
+        "<br>" +
+        "Pasient e-post: " + showEmail.innerHTML +
+        "<br>" +
+        "Tidspunkt: " + treatment.date + ", " + treatment.time +
+        "<br>" +
+        "Kommentar: " + treatment.comment;
+        document.querySelector("#startBookingBtn").style.display = "none";
         stepFourModal.style.display = "none";
+        document.querySelector("#returnBtn").style.display = "block";
     });
 }
