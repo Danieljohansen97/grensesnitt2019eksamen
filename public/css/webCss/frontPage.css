@@ -37,7 +37,7 @@ body{
 }
 #sideNav{
   grid-area: nav;
-  background:#eee;
+  background:#E0D7D3;
   opacity: 80%;
 }
 #mainContent{
