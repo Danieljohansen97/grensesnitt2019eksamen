@@ -2,6 +2,9 @@
 auth.onAuthStateChanged(user => {
     if (user) {
         setupUI(user);
+        if (document.querySelector("#showEmail")) {
+            showEmail.innerHTML = user.email;
+        }
     } else {
         setupUI();
     }
@@ -20,6 +23,7 @@ signupForm.addEventListener("submit", (e) => {
     auth.createUserWithEmailAndPassword(email, password).then(cred => {
         return db.collection("users").doc(cred.user.uid).set({
             name: signupForm["signupName"].value,
+            email: signupForm["signupEmail"].value,
             comment: signupForm["signupComment"].value
         });
     }).then(() => {

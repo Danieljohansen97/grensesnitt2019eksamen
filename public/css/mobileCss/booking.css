@@ -2,3 +2,8 @@
     text-align: center;
     color: #CCDAE1;
 }
+
+#content a {
+    text-decoration: none;
+    color: #CCDAE1;
+}
