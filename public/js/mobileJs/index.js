@@ -4,6 +4,7 @@ var userModalBtn = document.getElementById("userModalBtn");
 var loginModal = document.getElementById("loginModal");
 var loginModalBtn2 = document.getElementById("loginModalBtn2");
 var registerModal = document.getElementById("registerModal");
+var registerModalBtn2 = document.getElementById("registerModalBtn2");
 
 // Get the <span> element that closes the modal
 var userClose = document.getElementsByClassName("close")[0];
@@ -20,6 +21,12 @@ userModalBtn.onclick = function() {
 loginModalBtn2.onclick = function() {
   loginModal.style.display = "block";
   registerModal.style.display = "none";
+  userModal.style.display = "none";
+}
+
+registerModalBtn2.onclick = function() {
+  registerModal.style.display = "block";
+  loginModal.style.display = "none";
   userModal.style.display = "none";
 }
 
