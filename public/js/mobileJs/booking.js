@@ -2,6 +2,13 @@
 // DOMContentLoaded function
 document.addEventListener("DOMContentLoaded", () => {
     console.log("DOMContentLoaded.");
+
+    // Get bookings collection and render orders
+    db.collection("bookings").get().then(snapshot => {
+      snapshot.docs.forEach(doc => {
+          renderBooking(doc);
+      });
+    });
 });
 
 // Doing this again because there are additional buttons ofr the modals
@@ -66,20 +73,19 @@ function renderBooking(doc) {
   let div = document.createElement("div");
   let treatment = document.createElement("p");
   let patient = document.createElement("p");
+  let time = document.createElement("p");
+  let comment = document.createElement("p");
 
   div.setAttribute("data-id", doc.id);
   treatment.textContent = doc.data().treatment;
   patient.textContent = doc.data().patient;
+  time.textContent = doc.data().date + ", " + doc.data().time;
+  comment.textContent = doc.data().comment;
 
-  div.appendChild(treatment);
   div.appendChild(patient);
+  div.appendChild(treatment);
+  div.appendChild(time);
+  div.appendChild(comment);
 
   bookingList.appendChild(div);
 };
-
-// Get bookings collection
-db.collection("bookings").get().then(snapshot => {
-  snapshot.docs.forEach(doc => {
-      renderBooking(doc);
-  });
-});
