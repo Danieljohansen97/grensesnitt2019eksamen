@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     console.log("DOMContentLoaded.");
 });
 
+// Doing this again because there are additional buttons ofr the modals
 // Get the modals and buttons
 var userModal = document.getElementById("userModal");
 var userModalBtn = document.getElementById("userModalBtn");
@@ -26,12 +27,6 @@ userModalBtn.onclick = function() {
 }
 
 loginModalBtn.onclick = function() {
-  loginModal.style.display = "block";
-  registerModal.style.display = "none";
-  userModal.style.display = "none";
-}
-
-loginModalBtn2.onclick = function() {
   loginModal.style.display = "block";
   registerModal.style.display = "none";
   userModal.style.display = "none";
