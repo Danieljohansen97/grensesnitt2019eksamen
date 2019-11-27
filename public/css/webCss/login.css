@@ -6,19 +6,44 @@ body{
   font-family:'Montserrat', sans-serif;
 }
 
+#topNav{
+  color: white;
+  background: #181D21;
+  text-align: center;
+}
+
+#topNav h2{
+  color: white;
+  display: inline;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+#topNav img{
+  float: right;
+  width: 120px;
+  height: 45px;
+  margin: 10px;
+  padding-right: 10px;
+}
+
 .loginBox{
   background: #181D21;
+  border: 1px solid #000000;
   opacity: 80%;
-  width: 300px;
+  width: 700px;
   padding: 40px;
   position: absolute;
   left: 50%;
-  top: 40%;
+  top: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+  box-shadow: 5px 15px 20px #000000;
 
 }
 .loginBox h1{
+  padding-bottom: 20px;;
   color: #B2CBD4;
   text-transform: uppercase;
   font-weight: 500;
@@ -30,36 +55,37 @@ body{
   display: block;
   margin: 20px auto;
   text-align: center;
-  border: 2px solid #88A5BF;
+  border: 2px solid #9BB9BF;
   padding: 14px 10px;
-  width: 200px;
+  width: 110px;
   outline: none;
-  color: white;
+  color:#ffffff;
   border-radius: 24px;
   transition: 0.25s;
-
 }
 
 .loginBox input[type = "text"]:focus,.loginBox input[type = "password"]{
   width: 250px;
   color:#ffffff;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #ffffff;
 }
 
 .loginBox input[type = "submit"]{
-
    border: 0;
    background: none;
    display: block;
    margin: 20px auto;
    text-align: center;
-   border: 2px solid #88A5BF;
+   border: 2px solid #9BB9BF;
    padding: 14px 10px;
    width: 200px;
    outline: none;
    color: white;
    border-radius: 24px;
-   transition: ;
-  
+   transition: 0.25s;
 }
 
 .loginBox h1{

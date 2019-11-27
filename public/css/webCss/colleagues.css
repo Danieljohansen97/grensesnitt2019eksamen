@@ -1,0 +1,185 @@
+body{
+    display: grid;
+    grid-template-areas:
+    "header header header"
+    "nav article div"
+    "footer footer footer";
+    grid-template-rows: 60px 1fr 60px;
+    grid-template-columns: 12% 1fr 15%;
+    background: #CCDAE1;
+    height: 100vh;
+    margin: 0;
+    font-family: HelveticaNeue-Light;
+  } 
+  #topNav{
+    grid-area: header;
+    color: white;
+    background: #87A8B7;
+    text-align: center;
+  }
+  #topNav .menuIcon img{
+    float: left;
+    height: 25px;
+    width: 35px;
+    margin-top: -10px;
+    
+  }
+  #topNav h2{
+    color: white;
+    display: inline;
+  }
+  #topNav img{
+    float: right;
+    width: 120px;
+    height: 45px;
+    margin: 10px;
+    padding-right: 10px;
+  }
+  #sideNav{
+    grid-area: nav;
+    background: #ffffff;
+    opacity: 80%;
+  }
+  #mainContent{
+    grid-area: article;
+    background: #ffffff;
+  }
+  #notes{
+    grid-area: div;
+    background:#E0D7D3;
+  }
+  #footer{
+    grid-area: footer;
+    background:#87A8B7;
+  }
+  
+  /* Hamburgermenu overlay */
+  .overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+    opacity: 90%;
+    height: 100%;
+    width: 15%%;
+    position: fixed; /* Stay in place */
+    z-index: 2; /* Sit on top */
+    left: 0;
+    bottom: 0%;
+    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.3s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  }
+  
+  /* Position the content inside the overlay */
+  .overlay-content {
+    position: relative;
+    top: 25%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: left; 
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+  }
+  
+  /* The navigation links inside the overlay */
+  .overlay a {
+    padding: 20px;
+    text-decoration: none;
+    font-size: 2vw;
+    color: #818181;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  /* Position the close button (top right corner) */
+  .overlay .closebtn {
+    position: absolute;
+    top: 2px;
+    right: 45px;
+    font-size: 60px;
+    
+  }
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .dropbtn {
+    background-color: #B0B0B0;
+    color: white;
+    padding: 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 400px;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    left: 120px;
+    top: 100px;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 400px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 20px 10px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown:hover .dropbtn {
+    background-color: #E4D5C8;
+  }
+
+  
+
