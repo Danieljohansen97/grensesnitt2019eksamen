@@ -18,6 +18,7 @@ body{
   text-align: center;
 }
 #topNav .menuIcon img{
+
   float: left;
   height: 25px;
   width: 35px;
@@ -25,6 +26,7 @@ body{
   
 }
 #topNav h2{
+  
   color: white;
   display: inline;
 }
@@ -97,7 +99,6 @@ body{
 .overlay .closebtn {
   position: absolute;
   top: 2px;
-  right: 45px;
+  right: 10%;
   font-size: 60px;
-  
 }
