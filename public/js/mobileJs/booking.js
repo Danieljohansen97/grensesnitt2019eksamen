@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     console.log("DOMContentLoaded.");
 });
 
+// Doing this again because there are additional buttons ofr the modals
 // Get the modals and buttons
 var userModal = document.getElementById("userModal");
 var userModalBtn = document.getElementById("userModalBtn");
@@ -13,10 +14,16 @@ var loginModalBtn2 = document.getElementById("loginModalBtn2");
 var registerModal = document.getElementById("registerModal");
 var registerModalBtn = document.getElementById("registerModalBtn");
 
+// Get booking buttons and modals
+var startBookingBtn = document.getElementById("startBookingBtn");
+
+var stepOneModal = document.getElementById("stepOneModal");
+
 // Get the <span> element that closes the modal
 var userClose = document.getElementsByClassName("close")[0];
 var loginClose = document.getElementsByClassName("close")[1];
 var registerClose = document.getElementsByClassName("close")[2];
+var stepOneClose = document.getElementsByClassName("close")[3];
 
 // When the user clicks on the button, open the modal
 userModalBtn.onclick = function() {
@@ -31,16 +38,14 @@ loginModalBtn.onclick = function() {
   userModal.style.display = "none";
 }
 
-loginModalBtn2.onclick = function() {
-  loginModal.style.display = "block";
-  registerModal.style.display = "none";
-  userModal.style.display = "none";
-}
-
 registerModalBtn.onclick = function() {
   registerModal.style.display = "block";
   loginModal.style.display = "none";
   userModal.style.display = "none";
+}
+
+startBookingBtn.onclick = function() {
+  stepOneModal.style.display = "block";
 }
 
 // When the user clicks on <span> (x), close the modal

@@ -34,9 +34,72 @@
                         <a href="/public/html/mobileHtml/frontpage.html"><img id="logo" src="/public/pictures/HK_hvit_rgb.png"></a>
                     </li>
                     <li class="col2">
+                        <!-- User button -->
+                        <button id="userModalBtn">Bruker</button>
                     </li>
                 </ul>
             </nav>
+
+            <!-- User modal -->
+            <div id="userModal" class="modal">
+                <span class="close">&times;</span>
+                <br>
+                <!-- Modal Content -->
+                <div class="modalContent">
+                    <p class="loggedOut" style="display: none;">Du er ikke logget inn</p>
+                    <div id="userDetails">  
+                    </div>
+                    <p id="logout" class="loggedIn button" style="display: none;">Logg ut</p>
+                    <p id="loginModalBtn2" class="loggedOut button" style="display: none;">Logg inn</p>
+                    <br class="loggedOut">
+                    <p id="registerModalBtn2" class="loggedOut button" style="display: none;">Registrer ny bruker</p>
+                </div>
+            </div>
+
+            <!-- Login Modal-->
+            <div id="loginModal" class="modal">
+                <span class="close">&times;</span>
+                <br>
+                <!-- Modal Content -->
+                <div class="modalContent">
+                    <h4>Logg inn</h4>
+                    <form id="loginForm">
+                        <p>E-post:</p>
+                        <input type="email" id="loginEmail" placeholder="E-post">
+                        <p>Passord:</p>
+                        <input type="password" id="loginPassword" placeholder="Passord">
+                        <br>
+                        <button id="loginButton" class="button">Logg inn</button>
+                        <p class="error"></p>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Register modal -->
+            <div id="registerModal" class="modal">
+                <span class="close">&times;</span>
+                <br>
+                <!-- Modal Content -->
+                <div class="modalContent">
+                    <h4>Registrer deg</h4>
+                    <form id="signupForm">
+                        <p>E-post:</p>
+                        <input type="email" id="signupEmail" placeholder="E-post">
+                        <br>
+                        <p>Passord:</p>
+                        <input type="password" id="signupPassword" placeholder="Password">
+                        <br>
+                        <p>Navn:</p>
+                        <input type="text" id="signupName" placeholder="Navn">
+                        <br>
+                        <p>Kommentar:</p>
+                        <input type="text" id="signupComment" placeholder="Kommentar">
+                        <br>
+                        <button id="registerButton"  class="button">Opprett</button>
+                        <p class="error"></p>
+                    </form>
+                </div>
+            </div>
             
             <!-- CONTENT MAIN DIV -->
             <main>
@@ -85,6 +148,31 @@
                 </div>
             </div>
         </div>
+
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-firestore.js"></script>
+        <script>
+            // Your web app's Firebase configuration
+            var firebaseConfig = {
+                apiKey: "AIzaSyB9hDcu_H8U-XYC7f4PaiLzzxWTT4cppGk",
+                authDomain: "sk-devbuild.firebaseapp.com",
+                databaseURL: "https://sk-devbuild.firebaseio.com",
+                projectId: "sk-devbuild",
+                storageBucket: "sk-devbuild.appspot.com",
+                messagingSenderId: "480822561643",
+                appId: "1:480822561643:web:4ce91c54c055f3ad815a2e",
+                measurementId: "G-P2KJPWCB9E"
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+
+            // Make auth and firestore refs
+            const auth = firebase.auth();
+            const db = firebase.firestore();
+        </script>
+        <script src="/public/js/mobileJs/auth.js"></script>
         <script src="/public/js/mobileJs/index.js" type="text/javascript"></script>
     </body>
 </html>

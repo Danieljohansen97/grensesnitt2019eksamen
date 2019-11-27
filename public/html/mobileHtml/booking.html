@@ -46,13 +46,13 @@
                 <br>
                 <!-- Modal Content -->
                 <div class="modalContent">
-                    <h4 class="loggedIn" style="display: none;">Brukerinformasjon</h4>
                     <p class="loggedOut" style="display: none;">Du er ikke logget inn</p>
-                    <br>
                     <div id="userDetails">  
                     </div>
                     <p id="logout" class="loggedIn button" style="display: none;">Logg ut</p>
                     <p id="loginModalBtn2" class="loggedOut button" style="display: none;">Logg inn</p>
+                    <br class="loggedOut">
+                    <p id="registerModalBtn2" class="loggedOut button" style="display: none;">Registrer ny bruker</p>
                 </div>
             </div>
 
@@ -70,6 +70,7 @@
                         <input type="password" id="loginPassword" placeholder="Passord">
                         <br>
                         <button id="loginButton" class="button">Logg inn</button>
+                        <p class="error"></p>
                     </form>
                 </div>
             </div>
@@ -88,17 +89,95 @@
                         <p>Passord:</p>
                         <input type="password" id="signupPassword" placeholder="Password">
                         <br>
-                        <p>Fornavn:</p>
-                        <input type="text" id="signupFirstName" placeholder="Fornavn">
+                        <p>Navn:</p>
+                        <input type="text" id="signupName" placeholder="Navn">
                         <br>
-                        <p>Etternavn:</p>
-                        <input type="text" id="signupLastName" placeholder="Etternavn">
+                        <p>Kommentar:</p>
+                        <input type="text" id="signupComment" placeholder="Kommentar">
                         <br>
                         <button id="registerButton"  class="button">Opprett</button>
+                        <p class="error"></p>
                     </form>
                 </div>
             </div>
 
+            <!-- Booking process -->
+            <!-- Step 1 -->
+            <div id="stepOneModal" class="modal">
+                <h4>Steg 1</h4>
+                <br>
+                <!-- Modal Content -->
+                <div class="modalContent">
+                    <form id="stepOneForm">
+                        <p>Velg behandling:</p>
+                        <select form="stepOneForm" id="treatmentType">
+                            <option value="Osteopati">Osteopati</option>
+                            <option value="Akupunktur">Akupunktur</option>
+                            <option value="Kostholdsveiledning">Kostholdsveiledning</option>
+                            <option value="Fysiologisk testlab">Fysiologisk testlab</option>
+                        </select>
+                        <br>
+                        <br>
+                        <button id="completeStepOne" class="button">Neste</button>
+                    </form>
+                    <button id="endOrderOne" class="button">Avbryt</button>
+                </div>
+            </div>
+            <!-- Step 2 -->
+            <div id="stepTwoModal" class="modal">
+                <h4>Steg 2</h4>
+                <br>
+                <!-- Modal Content -->
+                <div class="modalContent">
+                    <form id="stepTwoForm">
+                        <p>Er dette deg?</p>
+                        <p id="showName"></p>
+                        <br>
+                        <p id="showEmail"></p>
+                        <br>
+                        <br>
+                        <button id="completeStepTwo" class="button">Ja</button>
+                    </form>
+                    <button id="endOrderTwo" class="button">Nei</button>
+                </div>
+            </div>
+            <!-- Step 3 -->
+            <div id="stepThreeModal" class="modal">
+                <h4>Steg 3</h4>
+                <br>
+                <!-- Modal Content -->
+                <div class="modalContent">
+                    <p>Velg tidspunkt:</p>
+                    <form id="stepThreeForm">
+                        <p>Dato:</p>
+                        <input type="date" id="treatmentDate">
+                        <p>Tid:</p>
+                        <input type="time" id="treatmentTime">
+                        <br>
+                        <button id="completeStepThree" class="button">Neste</button>
+                    </form>
+                    <br>
+                    <button id="endOrderThree" class="button">Avbryt</button>
+                </div>
+            </div>
+            <!-- Step 4 -->
+            <div id="stepFourModal" class="modal">
+                <h4>Steg 4</h4>
+                <br>
+                <!-- Modal Content -->
+                <div class="modalContent">
+                    <p>Legg ved Kommentar</p>
+                    <form id="stepFourForm">
+                        <p>Kommentar:</p>
+                        <input type="text" id="treatmentComment">
+                        <br>
+                        <button id="completeStepFour" class="button">Bestill</button>
+                    </form>
+                    <br>
+                    <button id="endOrderFour" class="button">Avbryt</button>
+                </div>
+            </div>
+            
             <!-- CONTENT MAIN DIV -->
             <div id="contentPusher"></div>
             <div id="content">
@@ -107,8 +186,14 @@
                 <p class="loggedOut button" id="loginModalBtn" style="display: none;">Logg inn</p>
                 <h3 class="loggedOut" style="display: none;">Ingen bruker?</h3>
                 <p class="loggedOut button" id="registerModalBtn" style="display: none;">Registrer ny bruker</p>
-                <!-- Continue with booking if logged in -->
-                <p class="loggedIn button" style="display: none;">Bestill time</p>
+
+                <!-- Start booking process -->
+                <p class="loggedIn button" id="startBookingBtn" style="display: none;">Bestill time</p>
+
+                <!-- Some confirmation that the order has been sent -->
+                <p id="bookingConfirmation"></p>
+                <br>
+                <a id="returnBtn" href="/public/html/mobileHtml/frontpage.html">Tilbake til hovedsiden</a>
             </div>
 
             <!-- FOOTER MAIN DIV -->
@@ -133,7 +218,6 @@
         <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
         <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-auth.js"></script>
         <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-firestore.js"></script>
-
         <script>
             // Your web app's Firebase configuration
             var firebaseConfig = {
@@ -153,9 +237,9 @@
             const auth = firebase.auth();
             const db = firebase.firestore();
         </script>
-
         <script src="/public/js/mobileJs/auth.js"></script>
         <script src="/public/js/mobileJs/index.js" type="text/javascript"></script>
         <script src="/public/js/mobileJs/booking.js" type="text/javascript"></script>
+        <script src="/public/js/mobileJs/order.js"></script>
     </body>
 </html>
