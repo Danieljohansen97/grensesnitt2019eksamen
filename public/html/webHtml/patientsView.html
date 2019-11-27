@@ -11,49 +11,50 @@
     <title>Document</title>
 
 </head>
-<body>
+    <body>
         <header id="topNav">
-                <img src="/public/pictures/HK_hvit_rgb.png" alt="logo">
-        <h2>Pasientoversikt</h2>
-        <div class="menuIcon">
-            <img src="/public/pictures/menuIcon.png" alt="menuIcon" onclick="openOverlay()">
-        </div>
-            </header>
+            <img src="/public/pictures/HK_hvit_rgb.png" alt="logo">
+            <div id="titlePosDiv">
+                <h2>Pasientoversikt</h2>
+            </div>
+            <div class="menuIcon">
+                <img src="/public/pictures/menuIcon.png" alt="menuIcon" onclick="openOverlay()">
+            </div>
+        </header>
         
 <!-- Hamburgermenu overlay -->
-<div style="width: 0;" id="openNav" class="overlay">
-        <!-- Button to close the overlay navigation -->
-            <a href="javascript:void(0)" class="closebtn" onclick="closeOverlay()">&times;</a>    
-            <!-- Overlay content -->
-            <div class="overlay-content">
-                <a id="activeLink" href="/public/html/webHtml/frontPage.html">Timeoversikt</a>
-                <a href="/public/html/webHtml/patientsView.html">Pasientoversikt</a>
-                <a href="/public/html/webHtml/contacts.html">Ansatte</a>
-                <a href="/public/html/webHtml/litterature.html">Litteratur</a>
-            </div>      
-     </div>
+    <div style="width: 0;" id="openNav" class="overlay">
+<!-- Button to close the overlay navigation -->
+    <a href="javascript:void(0)" class="closebtn" onclick="closeOverlay()">&times;</a>    
+<!-- Overlay content -->
+    <div class="overlay-content">
+        <a id="activeLink" href="/public/html/webHtml/frontPage.html">Timeoversikt</a>
+        <a href="/public/html/webHtml/patientsView.html">Pasientoversikt</a>
+        <a href="/public/html/webHtml/contacts.html">Ansatte</a>
+        <a href="/public/html/webHtml/litterature.html">Litteratur</a>
+    </div>      
+    </div>
 
-            <article id="mainContent">
+    <article id="mainContent">
+        <div class="dropdown">
+            <button class="dropbtn">Liste over pasienter</button>
+                <div class="dropdown-content">
+                    <a href="#">Nora Wifladt</a>
+                    <a href="#">Tea Olivia Bråthen</a>
+                    <a href="#">Benjamin Branes</a>
+                    <a href="#">Andre Holme</a>
+                    <a href="#">Amanda Fosberg</a>
+                    <a href="#">India Aastad</a>
+                    <!-- Trigger/Open The Modal -->
+                    <button id="myBtn" href="#">+ Legg til ny pasient</button>
+                </div>
 
-                    <div class="dropdown">
-                            <button class="dropbtn">Pasientoversikt</button>
-                            <div class="dropdown-content">
-                            <a href="#">Nora Wifladt</a>
-                            <a href="#">Tea Olivia Bråthen</a>
-                            <a href="#">Benjamin Branes</a>
-                            <a href="#">Andre Holme</a>
-                            <a href="#">Amanda Fosberg</a>
-                            <a href="#">India Aastad</a>
-                            <!-- Trigger/Open The Modal -->
-                            <button id="myBtn" href="#">+ Legg til ny pasient</button>
-                            </div>
-                             <!-- The Modal -->
-                             
-                <div id="myModal" class="modal">
-                    <span class="close">&times;</span>
-                    <div class="pForm">
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+            <div class="pForm">
+                <form action="/action_page.php">
 
-                        <form action="/action_page.php">
                             <label for="fname">First Name</label>
                             <input type="text" id="fname" name="firstname" placeholder="Your name..">
                         
@@ -72,24 +73,18 @@
 
                         </div>
 
-            
-                
-
+    </div>
 </div>
-
-                          </div>
-
-
-        
-                    
-
-            </article>
+</article>
            
                                
-                    
-            <nav id="sideNav">
-            </nav>
-            <div id="notes"></div>
+<nav id="sideNav"></nav>
+
+<div id="notes">
+    <div id="mySidenav" class="sidenav">
+       
+            </div>
+
             <footer id="footer"></footer>
     <script src="/public/js/webJs/index.js" type="text/javascript"></script>
     <script src="/public/js/webJs/patientsView.js" type="text/javascript"></script>
