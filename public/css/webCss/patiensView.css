@@ -19,7 +19,9 @@ body{
 }
 
 #headLine {
-  margin-left: 100px;
+  color: #000;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 #topNav .menuIcon img{
@@ -52,7 +54,7 @@ body{
 }
 #sideNav{
   grid-area: nav;
-  background: #ffffff;
+  background: #e0d7d3;
   opacity: 100%;
 }
 #mainContent{
@@ -61,16 +63,12 @@ body{
 }
 #notes{
   grid-area: div;
-  background:#fefefe;
+  background: #e0d7d3;
 }
 #footer{
   grid-area: footer;
-  background: #fefefe;
+  background: #606b75;
 }
-
-
-
-
 
   /* Hamburgermenu overlay */
 .overlay {
@@ -121,93 +119,20 @@ body{
   
 }
 
-input[type=text], select {
+table {
+  border-collapse: collapse;
   width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
+  margin-top: 2%;
 }
 
-input[type=submit] {
-  width: 100%;
-  background-color: #4CAF50;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-input[type=submit]:hover {
-  background-color: #45a049;
-}
-
-.pForm {
-  background-color: #fefefe;
-  margin: 15% auto; /* 15% from the top and centered */
-  padding: 160px;
-  border: none;
-  width: 20%; /* Could be more or less, depending on screen size */
-}
-
-#headLine2 {
-  margin-top: 10%;
-  font-family: HelveticaNeue-Light;
-}
-/* Style the tab */
-.tab {
-  float: left;
-  background-color: #fefefe;
-  width: 20%;
-  height: 300px;
-}
-
-/* Style the buttons inside the tab */
-.tab button {
-  display: block;
-  background-color: inherit;
-  color: black;
-  padding: 22px 16px;
-  width: 100%;
-  border: none;
-  outline: none;
+th, td {
   text-align: left;
-  cursor: pointer;
-  font-size: 17px;
+  padding: 8px;
 }
 
-/* Change background color of buttons on hover */
-.tab button:hover {
-  background-color: #ddd;
-}
+tr:nth-child(even){background-color: #f2f2f2}
 
-/* Create an active/current "tab button" class */
-.tab button.active {
+th {
   background-color: #606b75;
-}
-
-/* Style the tab content */
-.tabcontent {
-  float: left;
-  padding: 0px 12px;
-  width: 70%;
-  border-left: none;
-  height: 300px;
-  display: none;
-  font-family: HelveticaNeue-Light;
-}
-
-/* Clear floats after the tab */
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.tablinks {
-  font-family: HelveticaNeue-Light;
+  color: white;
 }
