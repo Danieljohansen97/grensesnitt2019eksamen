@@ -27,3 +27,25 @@ window.onclick = function(event) {
 function openEdit() {
   console.log("Hei");
 }
+
+// Add patient
+document.querySelector("#addBtn").addEventListener("click", (e) => {
+  e.preventDefault();
+  
+  let patient = {
+    fName: document.querySelector("#fName").value,
+    lName: document.querySelector("#lName").value,
+    email: document.querySelector("#epost").value
+  };
+  let patientList = document.querySelector("#patientList");
+  let html = `
+    <tr>
+      <td>${patient.fName}</td>
+      <td>${patient.lName}</td>
+      <td>${patient.email}</td>
+      <td onclick="openEdit()"><img style="width: 20px;" src="/public/pictures/blackpen.png"></th>
+    </tr>
+  `;
+  patientList.innerHTML += html;
+
+});
