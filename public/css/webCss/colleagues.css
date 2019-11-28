@@ -85,19 +85,77 @@ body{
   grid-template-columns: repeat(4, 1fr); 
   background-color:#ffffff;
   grid-area: main;
-  grid-gap: 10%; 
+  grid-gap: 5%; 
 }
 
-.studentsContainer{   
-  background-color: #3c455d;
-  opacity: 80%;
-  width: 30vw;
+.studentsContainer{
+  border: #000000 2px solid;     
+  width: 40vw;
   height: 20vw;
-  opacity: 50%;
-  margin-top: 35%; 
+  margin-top: 19%; 
   position: relative; 
-  margin-left: 20%; 
+  margin-left: 7%; 
 }
+/* ---- search and filter dropdown in studentsContainer---- */
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: #3c455d;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;    
+}
+
+/* Dropdown button changens color when you hover and focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #989fb3;
+}
+
+/*  search field */
+#userInput {
+  box-sizing: border-box;
+  background-position: 14px 12px;
+  background-repeat: no-repeat;
+  font-size: 18px;
+  padding: 14px 20px 12px 45px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Search field when it gets focus/clicked on */
+#userInput:focus {outline: 3px solid #ddd;}
+
+/* The dropdown container that holds the content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  width: 100%
+} 
+/* Dropdown Content */
+
+.dropdownContent {
+  display: none;
+  position: absolute;
+  background-color: #f6f6f6;
+  min-width: 230px;
+  border: 1px solid #ddd;
+  z-index: 1;
+}
+
+.dropdownContent a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdownContent a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
 
 .teachersContainer{
   border: #000000 2px solid;
