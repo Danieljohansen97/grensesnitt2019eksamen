@@ -64,13 +64,9 @@ body{
     color: #8c8d8f;
 }
 
-
 #headLine {
   margin-left: 10%;
 }
-
-
-
 
 #sideNav{
   grid-area: nav;

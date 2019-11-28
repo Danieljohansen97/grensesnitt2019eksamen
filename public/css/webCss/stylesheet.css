@@ -101,7 +101,7 @@ body{
   height: 100%;
   width: 100vw;  
   grid-area: header;
-  background: #606b75;
+  background: #3c455d;
   list-style: none;
   margin: 0;
   overflow: hidden;
@@ -160,7 +160,7 @@ body{
 }
 #footer{
   grid-area: footer;
-  background:#606b75;
+  background:#3c455d;
 }
 
 /* --- Content on page --- */
