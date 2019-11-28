@@ -72,11 +72,10 @@ body{
 
 
 
-}
+
 #sideNav{
   grid-area: nav;
   background:#E0D7D3;
-  opacity: 80%;
 }
 #mainContent{
   grid-area: article;
