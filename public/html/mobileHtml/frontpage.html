@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>FrontPage</title>
+        <meta lang="no">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
@@ -22,7 +23,7 @@
                         <a href="/public/html/mobileHtml/treatments.html">Behandlinger og priser</a>
                         <a href="/public/html/mobileHtml/aboutUs.html">Om oss</a>
                     </div>      
-                    </div>
+                </div>
                 <!-- NAVBAR MAIN DIV -->
                 <ul class="row" id="navbar">
                     <li class="col2" id="hamburgerMenuContainer" onclick="openOverlay()">
@@ -35,7 +36,7 @@
                     </li>
                     <li class="col2">
                         <!-- User button -->
-                        <button id="userModalBtn">Bruker</button>
+                        <img src="/public/pictures/user-white.png" id="userModalBtn"></img>
                     </li>
                 </ul>
             </nav>
@@ -52,7 +53,7 @@
                     <p id="logout" class="loggedIn button" style="display: none;">Logg ut</p>
                     <p id="loginModalBtn2" class="loggedOut button" style="display: none;">Logg inn</p>
                     <br class="loggedOut">
-                    <p id="registerModalBtn2" class="loggedOut button" style="display: none;">Registrer ny bruker</p>
+                    <p id="registerModalBtn2" class="loggedOut button" style="display: none;">Ny bruker</p>
                 </div>
             </div>
 
@@ -64,9 +65,7 @@
                 <div class="modalContent">
                     <h4>Logg inn</h4>
                     <form id="loginForm">
-                        <p>E-post:</p>
                         <input type="email" id="loginEmail" placeholder="E-post">
-                        <p>Passord:</p>
                         <input type="password" id="loginPassword" placeholder="Passord">
                         <br>
                         <button id="loginButton" class="button">Logg inn</button>
@@ -83,16 +82,12 @@
                 <div class="modalContent">
                     <h4>Registrer deg</h4>
                     <form id="signupForm">
-                        <p>E-post:</p>
                         <input type="email" id="signupEmail" placeholder="E-post">
                         <br>
-                        <p>Passord:</p>
                         <input type="password" id="signupPassword" placeholder="Password">
                         <br>
-                        <p>Navn:</p>
                         <input type="text" id="signupName" placeholder="Navn">
                         <br>
-                        <p>Kommentar:</p>
                         <input type="text" id="signupComment" placeholder="Kommentar">
                         <br>
                         <button id="registerButton"  class="button">Opprett</button>
@@ -105,41 +100,49 @@
             <main>
                 <div id="contentPusher"></div>
                 <!-- Bookings -->
-                <div class="row">
-                    <div class="col12">
-                        <div id="booking" class="frontpageHeader">
-                            <a class="contentButton" href="/public/html/mobileHtml/booking.html">Bestill Time</a>
+                <div id="content">
+                    <a tabindex="1" href="/public/html/mobileHtml/booking.html">
+                        <div class="row">
+                            <div style="padding-top: 5vh;" class="col12">
+                                <div id="booking" class="frontpageHeader">
+                                    <img id="orderIcon" src="/public/pictures/order-white.png">
+                                    <p>Bestill Time</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <!-- Treatments -->
-                <div class="row">
-                    <div class="col12">
-                        <div id="treatment" class="frontpageHeader">
-                            <a class="contentButton" href="/public/html/mobileHtml/treatments.html">Behandlinger & Priser</a>
+                    </a>
+                    <!-- Treatments -->
+                    <a tabindex="2" href="/public/html/mobileHtml/treatments.html">
+                        <div class="row">
+                            <div class="col12">
+                                <div id="treatment" class="frontpageHeader">
+                                    <img id="treatmentIcon" src="/public/pictures/massage-white.png">
+                                    <p>Behandlinger & Priser</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <!-- About Us -->
-                <div class="row">
-                    <div class="col12">
-                        <div id="about" class="frontpageHeader">
-                            <a class="contentButton" href="/public/html/mobileHtml/aboutUs.html">Om Oss</a>
+                    </a>
+                    <!-- About Us -->
+                    <a tabindex="3" href="/public/html/mobileHtml/aboutUs.html">
+                        <div class="row">
+                            <div class="col12">
+                                <div id="about" class="frontpageHeader">
+                                    <img id="infoIcon" src="/public/pictures/info-icon-white.png">
+                                    <p>Om Studentklinikken</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </main>
 
             <!-- FOOTER MAIN DIV -->
             <div id="footer">
-                <div id="footerPusher"></div>
                 <div class="row">
-                    <div class="col6">
+                    <div class="col12">
                         <h5>Kontaktinformasjon</h5>
                         <p>TLF: 971 17 690</p>
                         <p>E-post: studentklinikken@kristiania.no</p>
-                    </div>
-                    <div class="col6">
                         <h5>Eksterne sider</h5>
                         <a href="https://kristiania.no/">Høgskolen Kristiania</a>
                         <br>

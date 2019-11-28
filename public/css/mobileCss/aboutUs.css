@@ -1,15 +1,14 @@
 .aboutusHeader {
-    background-color: #CCDAE1;
+    border-bottom: 2px solid white;
+    border-left: 2px solid white;
     text-align: center;
-    color: black;
-    font-family: helvetica;
-    margin-bottom: 15%;
+    color: white;
+    margin-bottom: 10%;
     width: 90%;
 }
 
 .aboutusBody {
-    background-color: #CCDAE1;
-    padding: 3%;
+    padding: 5%;
     text-align: justify;
 }
 

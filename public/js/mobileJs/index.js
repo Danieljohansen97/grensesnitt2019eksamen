@@ -73,9 +73,11 @@ const setupUI = (user) => {
 
 // Hamburgermenu overlay
 function openOverlay() {
+    document.getElementById("myNav").style.height = "100%";
     document.getElementById("myNav").style.width = "40%";
 }
   
 function closeOverlay() {
+    document.getElementById("myNav").style.height = "0%";
     document.getElementById("myNav").style.width = "0%";
 }

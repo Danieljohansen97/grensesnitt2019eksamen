@@ -11,3 +11,7 @@
 #returnBtn {
     display: none;
 }
+
+#startBookingBtn {
+    margin-top: 20vh;
+}

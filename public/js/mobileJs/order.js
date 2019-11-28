@@ -74,7 +74,7 @@ if (showName !== "") {
     
     // Step 4 
     endOrder4.addEventListener("click", () => {
-        stepThreeModal.style.display = "none";
+        stepFourModal.style.display = "none";
     
         // Clear form and order details if they exist
         treatment.type = "";

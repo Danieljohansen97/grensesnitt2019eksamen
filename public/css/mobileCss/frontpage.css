@@ -7,18 +7,36 @@
 
 .frontpageHeader {
     position: relative;
-    background: #CCDAE1;
-    width: 80%;
-    height: 200px;
+    width: 40%;
+    height: 170px;
     text-align: center;
     font-family: helvetica;
     margin: auto;
-    margin-bottom: 20px;
+}
+
+#orderIcon {
+    height: 10vh;
+}
+
+
+#treatmentIcon {
+    height: 10vh;
+}
+
+#infoIcon {
+    height: 10vh;
+}
+
+#orderIcon:hover, #treatmentIcon:hover, #infoIcon:hover {
+    height: 20vhpx;
+}
+
+.frontpageHeader p {
+    color: white;
 }
 
 .contentButton{
     position: relative;
-    top: 80%;
     color: white;
     background-color: #7E9DAD;
     font-size: 2.5vw;;
