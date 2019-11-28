@@ -11,37 +11,67 @@ body{
   margin: 0;
   font-family: HelveticaNeue-Light;
 } 
-#topNav{
-  grid-area: header;
-  color: white;
-  background: #606b75;
-  text-align: center;
-}
-#topNav .menuIcon img{
 
-  float: left;
-  height: 25px;
-  width: 35px;
-  margin-top: -50px;
-  margin-left: 2%;
-  
+
+#headLine {
+  color: #000;
+  text-align: center;
+  text-transform: uppercase;
 }
+.navbar{
+  display: inline-block;  
+  height: 100%;
+  width: 100vw;  
+  grid-area: header;
+  background: #3c455d;
+  list-style: none;
+  margin: 0;
+  overflow: hidden;
+  justify-content: center;
+}
+
+.navbar li{
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+
+.navbar li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.4vw;
+}
+
+.navbarTextLi {
+    margin-top: 15px;
+}
+
+.leftTextLi{
+  margin-top: 15px;
+}
+
+.navbarImgLi {
+    margin-top: 10px;        
+}
+
+.navbarImg {
+  width: 120px;
+  height: 45px;
+  margin-left: 1px; 
+}
+
+.navbar a:hover{
+    background-color: #bebebe;
+    color: #8c8d8f;
+}
+
 
 #headLine {
   margin-left: 10%;
 }
 
-#topNav h2{
-  
-  color: white;
-  text-align: center;
-}
-#topNav img{
-  float: right;
-  width: 120px;
-  height: 45px;
-  margin: 10px;
-  padding-right: 10px;
+
+
 }
 #sideNav{
   grid-area: nav;
@@ -58,7 +88,7 @@ body{
 }
 #footer{
   grid-area: footer;
-  background:#606b75;
+  background:#3c455d;
 }
 
 /* Hamburgermenu overlay */
@@ -118,7 +148,7 @@ ul {list-style-type: none;}
 .month {
   padding: 70px 25px;
   width: 100%;
-  background: #606b75;
+  background: #3c455d;
   text-align: center;
 }
 

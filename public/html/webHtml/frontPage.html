@@ -12,25 +12,16 @@
 
 <body> 
     <header id="topNav">
-        <img src="/public/pictures/HK_hvit_rgb.png" alt="logo">
-        <h2 id="headLine">Studentklinikken for ansatte</h2>
-        <div class="menuIcon">
-            <img src="/public/pictures/menuIcon.png" alt="menuIcon" onclick="openOverlay()">
-        </div>
-    </header>
 
- <!-- Hamburgermenu overlay -->
- <div id="openNav" class="overlay">
-    <!-- Button to close the overlay navigation -->
-        <a href="javascript:void(0)" class="closebtn" onclick="closeOverlay()">&times;</a>    
-        <!-- Overlay content -->
-        <div class="overlay-content">
-            <a id="activeLink" href="/public/html/webHtml/frontPage.html">Timeoversikt</a>
-            <a href="/public/html/webHtml/patientsView.html">Pasientoversikt</a>
-            <a href="/public/html/webHtml/contacts.html">Ansatte</a>
-        </div>      
- </div>
-  <!-- NAVBAR MAIN DIV -->
+        <ul class="navbar">
+            <li class="leftTextLi"><a href="/public/html/webHtml/frontPage.html">Timeplan</a></li>
+            <li class="navbarTextLi"><a href="/public/html/webHtml/patientsView.html">Pasienter</a></li>  
+            <li class="navbarTextLi"><a href="/public/html/webHtml/colleagues.html">Ansatte</a></li>
+            <li class="navbarImgLi"><img class="navbarImg" src="/public/pictures/HK_hvit_rgb.png"></li>
+        </ul>
+
+        
+    </header>
 
     <article id="mainContent"><br>
 
