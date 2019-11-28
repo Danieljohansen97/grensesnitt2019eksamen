@@ -81,3 +81,19 @@ function closeOverlay() {
     document.getElementById("myNav").style.height = "0%";
     document.getElementById("myNav").style.width = "0%";
 }
+
+document.querySelector("#scrollUp").addEventListener("click", () => {
+    document.documentElement.scrollTop = 0;
+});
+
+var scrollUp = document.getElementById("scrollUp");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.documentElement.scrollTop > 500) {
+    scrollUp.style.display = "block";
+  } else {
+    scrollUp.style.display = "none";
+  }
+}
