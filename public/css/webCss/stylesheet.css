@@ -162,10 +162,3 @@ body{
   grid-area: footer;
   background:#3c455d;
 }
-
-/* --- Content on page --- */
-
-#mainContent{
-    background-color: rgb(255, 244, 240);
-    grid-area: main;
-}
