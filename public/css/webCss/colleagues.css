@@ -64,12 +64,10 @@ body{
   grid-area: nav;
   background: #E0D7D3;
   height: 100%;
-  opacity:70%
 }
 #notes{
   grid-area: div;
   background:#E0D7D3;
-  opacity:70%;
   height: 100%;
 }
 
@@ -124,16 +122,16 @@ th {
 }
 
 #headline {
-    margin-top: 0;
-    background-color:#3c455d;
-    padding: 5%;
-    color: white;
-    font-weight: lighter;    
+  margin-top: 0;
+  background-color:#3c455d;
+  padding: 5%;
+  color: white;
+  font-weight: lighter;    
 }
 
 .teachersList li{
-    list-style: none;
-    margin-top: 15%;
+  list-style: none;
+  margin-top: 15%;
 }
 
 .teachersList li a{
