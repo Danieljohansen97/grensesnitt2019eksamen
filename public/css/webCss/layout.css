@@ -55,10 +55,6 @@ body{
     margin-left: 1px; 
   }
 
-  .navbar a:hover{
-      background-color: #bebebe;
-      color: #8c8d8f;
-  }
   #sideNav{
     grid-area: nav;
     background: #E0D7D3;
@@ -137,11 +133,6 @@ body{
     width: 120px;
     height: 45px;
     margin-left: 1px; 
-  }
-
-  .navbar a:hover{
-      background-color: #bebebe;
-      color: #8c8d8f;
   }
   #sideNav{
     grid-area: nav;

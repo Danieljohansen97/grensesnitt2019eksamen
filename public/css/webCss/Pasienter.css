@@ -60,8 +60,7 @@ body{
 }
 
 .navbar a:hover{
-    background-color: #bebebe;
-    color: #8c8d8f;
+    color: black;
 }
 
 #titlePosDiv {
