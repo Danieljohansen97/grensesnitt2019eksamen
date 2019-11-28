@@ -90,12 +90,14 @@ ul {list-style-type: none;}
   width: 100%;
   background: #3c455d;
   text-align: center;
+
 }
 
 /* Month list */
 .month ul {
   margin: 0;
   padding: 0;
+  
 }
 
 .month ul li {
