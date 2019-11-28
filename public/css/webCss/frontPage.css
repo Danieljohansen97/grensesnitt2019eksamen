@@ -79,7 +79,7 @@ body{
 }
 #mainContent{
   grid-area: article;
-  background: #E0D7D3;
+  background: #fff;
 }
 #notes{
   grid-area: div;
@@ -90,54 +90,6 @@ body{
   background:#3c455d;
 }
 
-/* Hamburgermenu overlay */
-.overlay {
-  /* Height & width depends on how you want to reveal the overlay (see JS below) */   
-  opacity: 90%;
-  height: 100%;
-  width: 15%;
-  position: fixed; /* Stay in place */
-  z-index: 2; /* Sit on top */
-  left: 0;
-  bottom: 0%;
-  background-color: rgb(0,0,0); /* Black fallback color */
-  background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
-  overflow-x: hidden; /* Disable horizontal scroll */
-  transition: 0.3s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
-}
-
-/* Position the content inside the overlay */
-.overlay-content {
-  position: relative;
-  top: 25%; /* 25% from the top */
-  width: 100%; /* 100% width */
-  text-align: left; 
-  margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
-}
-
-/* The navigation links inside the overlay */
-.overlay a {
-  padding: 20px;
-  text-decoration: none;
-  font-size: 2vw;
-  color: #818181;
-  display: block; /* Display block instead of inline */
-  transition: 0.3s; /* Transition effects on hover (color) */
-}
-
-/* When you mouse over the navigation links, change their color */
-.overlay a:hover, .overlay a:focus {
-  color: #f1f1f1;
-}
-
-/* Position the close button (top right corner) */
-.overlay .closebtn {
-  position: absolute;
-  top: 2px;
-  right: 10%;
-  font-size: 60px;
-  
-}
 
 /*calendar*/
 ul {list-style-type: none;}
@@ -189,7 +141,6 @@ ul {list-style-type: none;}
   color: #666;
   text-align: center;
 }
-
 /* Days (1-31) */
 .days {
   padding: 10px 0;
@@ -202,8 +153,8 @@ ul {list-style-type: none;}
   display: inline-block;
   width: 13.6%;
   text-align: center;
-  margin-bottom: 50px;
-  font-size:15px;
+  margin-bottom: 5px;
+  font-size:12px;
   color: #777;
 }
 
@@ -212,8 +163,4 @@ ul {list-style-type: none;}
   padding: 5px;
   background: #1abc9c;
   color: white !important
-}
-
-#sunday {
-  color: red;
 }
