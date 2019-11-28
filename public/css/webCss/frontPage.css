@@ -50,7 +50,7 @@ body{
 }
 #mainContent{
   grid-area: article;
-  background: #ffffff;
+  background: #E0D7D3;
 }
 #notes{
   grid-area: div;

@@ -37,12 +37,12 @@ body{
 }
 #sideNav{
   grid-area: nav;
-  background: #ffffff;
+  background: #E0D7D3;
   opacity: 80%;
 }
 #mainContent{
   grid-area: article;
-  background: #ffffff;
+  background: #E0D7D3;
 }
 #notes{
   grid-area: div;
@@ -50,7 +50,7 @@ body{
 }
 #footer{
   grid-area: footer;
-  background:#87A8B7;
+  background:#606b75;
 }
 
 /* Hamburgermenu overlay */

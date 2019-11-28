@@ -14,7 +14,7 @@
 <body>
     <header id="topNav">
         <img src="/public/pictures/HK_hvit_rgb.png" alt="logo">
-        <h2 id="headLine">Pasientoversikt</h2>
+        <h2>Pasientoversikt</h2>
         <div class="menuIcon">
             <img src="/public/pictures/menuIcon.png" alt="menuIcon" onclick="openOverlay()">
         </div>
@@ -32,34 +32,41 @@
         </div>      
     </div>
     <article id="mainContent">
-        
-            <h2 id="headLine2">Oversikt over pasienter</h2>
-            
-            <div class="tab">
-              <button class="tablinks" onmouseover="openCity(event, 'Pasient1')">Pasient 1</button>
-              <button class="tablinks" onmouseover="openCity(event, 'Pasient2')">Pasient 2</button>
-              <button class="tablinks" onmouseover="openCity(event, 'Pasient3')">Pasient 3</button>
+        <div class="dropdown">
+            <button class="dropbtn">Pasientoversikt</button>
+            <div class="dropdown-content">
+                <a href="#">Nora Wifladt</a>
+                <a href="#">Tea Olivia Bråthen</a>
+                <a href="#">Benjamin Branes</a>
+                <a href="#">Andre Holme</a>
+                <a href="#">Amanda Fosberg</a>
+                <a href="#">India Aastad</a>
+                <!-- Trigger/Open The Modal -->
+                <button id="myBtn" href="#">+ Legg til ny pasient</button>
             </div>
-            
-            <div id="Pasient1" class="tabcontent">
-              <h3>Pasient 1</h3>
-              <p>London is the capital city of England.</p>
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <div class="pForm">
+                    <form action="/action_page.php">
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                        
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                        
+                        <label for="country">Country</label>
+                        <select id="country" name="country">
+                            <option value="australia">Australia</option>
+                            <option value="canada">Canada</option>
+                            <option value="usa">USA</option>
+                        </select>
+                        
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
             </div>
-            
-            <div id="Pasient2" class="tabcontent">
-              <h3>Pasient 2</h3>
-              <p>Paris is the capital of France.</p> 
-            </div>
-            
-            <div id="Pasient3" class="tabcontent">
-              <h3>Pasient 3</h3>
-              <p>Tokyo is the capital of Japan.</p>
-            </div>
-            
-            <div class="clearfix"></div>
-
-        
-    
+        </div>
     </article>
     <nav id="sideNav">
     </nav>
