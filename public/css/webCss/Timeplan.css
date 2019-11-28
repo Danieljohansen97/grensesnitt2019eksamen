@@ -1,13 +1,22 @@
-
+body{
+  display: grid;
+  grid-template-areas:
+  "header header header"
+  "nav article div"
+  "footer footer footer";
+  grid-template-rows: 60px 1fr 60px;
+  grid-template-columns: 12% 1fr 15%;
+  background: #eee;
+  height: 100vh;
+  margin: 0;
+  font-family: HelveticaNeue-Light;
+} 
 
 #headLine {
   color: #000;
   text-align: center;
   text-transform: uppercase;
-  margin-left:10%;
 }
-<<<<<<< HEAD
-=======
 .navbar{
   display: inline-block;  
   height: 100%;
@@ -55,9 +64,13 @@
     color: #8c8d8f;
 }
 
+
 #headLine {
   margin-left: 10%;
 }
+
+
+
 
 #sideNav{
   grid-area: nav;
@@ -75,10 +88,11 @@
   grid-area: footer;
   background:#3c455d;
 }
->>>>>>> 28144619214820d47d1deb1250c1fa61c640246f
+
 
 /*calendar*/
 ul {list-style-type: none;}
+
 
 /* Month header */
 .month {
