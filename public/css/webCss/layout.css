@@ -18,7 +18,7 @@ body{
     height: 100%;
     width: 100vw;  
     grid-area: header;
-    background: #606b75;
+    background: #3c455d;
     list-style: none;
     margin: 0;
     overflow: hidden;
@@ -42,8 +42,7 @@ body{
   }
 
   .leftTextLi{
-      margin-top: 15px;
-      margin-left: ;
+    margin-top: 15px;
   }
 
   .navbarImgLi {
@@ -64,7 +63,7 @@ body{
     grid-area: nav;
     background: #E0D7D3;
     height: 100%;
-    opacity:70%
+    opacity: 70%;
   }
   #mainContent{
     grid-area: article;
@@ -77,7 +76,7 @@ body{
   }
   #footer{
     grid-area: footer;
-    background:#606b75;
+    background:#3c455d;
   }
 
   /* --- Content on page --- */
@@ -127,7 +126,7 @@ body{
 
   .leftTextLi{
       margin-top: 15px;
-      margin-left: ;
+      
   }
 
   .navbarImgLi {
