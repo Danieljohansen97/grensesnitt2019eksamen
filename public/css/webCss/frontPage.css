@@ -6,10 +6,79 @@
   text-transform: uppercase;
   margin-left:10%;
 }
+<<<<<<< HEAD
+=======
+.navbar{
+  display: inline-block;  
+  height: 100%;
+  width: 100vw;  
+  grid-area: header;
+  background: #3c455d;
+  list-style: none;
+  margin: 0;
+  overflow: hidden;
+  justify-content: center;
+}
+
+.navbar li{
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+
+.navbar li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.4vw;
+}
+
+.navbarTextLi {
+    margin-top: 15px;
+}
+
+.leftTextLi{
+  margin-top: 15px;
+}
+
+.navbarImgLi {
+    margin-top: 10px;        
+}
+
+.navbarImg {
+  width: 120px;
+  height: 45px;
+  margin-left: 1px; 
+}
+
+.navbar a:hover{
+    background-color: #bebebe;
+    color: #8c8d8f;
+}
+
+#headLine {
+  margin-left: 10%;
+}
+
+#sideNav{
+  grid-area: nav;
+  background:#E0D7D3;
+}
+#mainContent{
+  grid-area: article;
+  background: #fff;
+}
+#notes{
+  grid-area: div;
+  background:#E0D7D3;
+}
+#footer{
+  grid-area: footer;
+  background:#3c455d;
+}
+>>>>>>> 28144619214820d47d1deb1250c1fa61c640246f
 
 /*calendar*/
 ul {list-style-type: none;}
-
 
 /* Month header */
 .month {
