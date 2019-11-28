@@ -38,44 +38,35 @@
         <td>peter@msn.no</td>
         <td onclick="openEdit()"><img style="width: 20px;" src="/public/pictures/blackpen.png"></th>
       </tr>
-    </table>
+    </table> 
+    <!-- Trigger/Open The Modal -->
+    <button id="myBtn">+ Legg til ny pasient</button>
                     
-                    <!-- Trigger/Open The Modal -->
-                    <button id="myBtn">+ Legg til ny pasient</button>
-                    
-                    <!-- The Modal -->
-                    <div id="myModal" class="modal">
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
                       
-                      <!-- Modal content -->
-                      <div class="modal-content">
-                        <span class="close">&times;</span>
-                        <h3 id="addPatient">Legg til ny pasient</h3>
-                        
-                        
-                        <div class="container">
-                          <form action="/action_page.php">
-                            <label for="fname">Fornavn</label>
-                            <input type="text" id="fName" name="firstname" placeholder="Kari">
-                            
-                            <label for="lname">Etternavn</label>
-                            <input type="text" id="lName" name="lastname" placeholder="Nordmann">
-                            
-                            <label for="lname">E-post</label>
-                            <input type="text" id="epost" name="epost" placeholder="eksempel@hotmail.com">
-                            
-                            <input id="addBtn" type="submit" value="Legg til">
-                          </form>
-                        </div>
-                      </div>
-                      
-                    </div>
-                    
-                  </article>
-                  <nav id="sideNav">
-                  </nav>
-                  <div id="notes"></div>
-                  <footer id="footer"></footer>
-                  <script src="/public/js/webJs/index.js" type="text/javascript"></script>
-                  <script src="/public/js/webJs/patientsView.js" type="text/javascript"></script>
-                </body>
-                </html>
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h3 id="addPatient">Legg til ny pasient</h3>
+      <div class="container">
+        <form action="/action_page.php">
+          <label for="fname">Fornavn</label>
+          <input type="text" id="fName" name="firstname" placeholder="Kari">
+          <label for="lname">Etternavn</label>
+          <input type="text" id="lName" name="lastname" placeholder="Nordmann">
+          <label for="lname">E-post</label>
+          <input type="text" id="epost" name="epost" placeholder="eksempel@hotmail.com">
+          <input id="addBtn" type="submit" value="Legg til">
+        </form>
+      </div>
+    </div>
+  </div>
+  </article>
+  <nav id="sideNav"></nav>
+  <div id="notes"></div>
+  <footer id="footer"></footer>
+  <script src="/public/js/webJs/index.js" type="text/javascript"></script>
+  <script src="/public/js/webJs/patientsView.js" type="text/javascript"></script>
+</body>
+</html>
