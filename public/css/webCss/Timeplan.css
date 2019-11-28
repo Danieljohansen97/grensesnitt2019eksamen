@@ -9,7 +9,7 @@ ul {list-style-type: none;}
 body {font-family: Verdana, sans-serif;}
 
 .month {
-  padding: 70px 25px;
+  padding: 70px 55px;
   width: 100%;
   background: #3c455d;
   text-align: center;
@@ -61,13 +61,13 @@ body {font-family: Verdana, sans-serif;}
   display: inline-block;
   width: 13.6%;
   text-align: center;
-  margin-bottom: 5px;
+  margin-bottom: 32px;
   font-size:12px;
   color: #777;
 }
 
 .days li .active {
   padding: 5px;
-  background: #1abc9c;
+  background: rgb(153, 198, 206);
   color: white !important
 }
