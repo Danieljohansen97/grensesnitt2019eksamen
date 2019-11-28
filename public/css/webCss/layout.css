@@ -55,10 +55,13 @@ body{
     margin-left: 1px; 
   }
 
+<<<<<<< HEAD
   .navbar a:hover{
       background-color: #bebebe;
       color: #505a77;
   }
+=======
+>>>>>>> a57ae08dfeb6b4aca0b45334d27d3f4a1afc6070
   #sideNav{
     grid-area: nav;
     background: #E0D7D3;
@@ -81,3 +84,89 @@ body{
 
   /* --- Content on page --- */
   
+<<<<<<< HEAD
+=======
+ /* --- Layout styling --- */
+body{
+    display: grid;
+    grid-template-areas:
+    "header header header"
+    "nav main div"
+    "footer footer footer";
+    grid-template-rows: 60px 1fr 60px;
+    grid-template-columns: 13% 1fr 13%;
+    background: #E0D7D3;
+    height: 100vh;
+    margin: 0;
+    font-family: HelveticaNeue-Light;
+  } 
+
+  .navbar{
+    display: inline-block;  
+    height: 100%;
+    width: 100vw;  
+    grid-area: header;
+    background: #606b75;
+    list-style: none;
+    margin: 0;
+    overflow: hidden;
+    justify-content: center;
+  }
+
+  .navbar li{
+      float: left;
+      width: 25%;
+      text-align: center;
+  }
+
+  .navbar li a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.4vw;
+  }
+
+  .navbarTextLi {
+      margin-top: 15px;
+  }
+
+  .leftTextLi{
+      margin-top: 15px;
+      
+  }
+
+  .navbarImgLi {
+      margin-top: 10px;        
+  }
+
+  .navbarImg {
+    width: 120px;
+    height: 45px;
+    margin-left: 1px; 
+  }
+  #sideNav{
+    grid-area: nav;
+    background: #E0D7D3;
+    height: 100%;
+    opacity:70%
+  }
+  #mainContent{
+    grid-area: main;
+    background: #E0D7D3;
+  }
+  #notes{
+    grid-area: div;
+    background:#E0D7D3;
+    opacity:70%
+  }
+  #footer{
+    grid-area: footer;
+    background:#606b75;
+  }
+
+  /* --- Content on page --- */
+  
+  #mainContent{
+      background-color: rgb(255, 244, 240);
+      grid-area: main;
+  }
+>>>>>>> a57ae08dfeb6b4aca0b45334d27d3f4a1afc6070

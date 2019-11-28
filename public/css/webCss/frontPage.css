@@ -62,11 +62,6 @@ body{
   margin-left: 1px; 
 }
 
-.navbar a:hover{
-    background-color: #bebebe;
-    color: #8c8d8f;
-}
-
 #headLine {
   margin-left: 10%;
 }
