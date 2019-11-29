@@ -1,11 +1,18 @@
 README:
+************INSTRUKSJONER FOR OPPSTART************
+
+1: ANSATTE SIDER: åpne Timeplan.html under webHtml mappen.
+
+2: MOBILSIDER FOR KUNDER: åpne frontpage.html under mobileHtml mappen.
+
+
 * Dette er et prosjekt hvor vi skal utvikle en booking-løsning for studentklinikken ved Høgskolen Kristiania, løsningen skal være utviklet for mobil. Det skal også være en Desktop-basert løsning for ansatte, der de kan gå inn å få oversikt over, redigere, tildele bookingavtaler. Hovedfokuset er egentlig på design, brukervennlighet og universell utforming, men vi kommer også til å utvikle funksjonaliteten så godt det lar seg gjøre.
 
 * Link til github repo: https://github.com/Danieljohansen97/grensesnitt2019eksamen.git
 
 
-
 Github kommandoer:
+--(Dette er en huskeliste for oss på gruppa)--
 
 - 1: git status
         Sjekker hvilke filer det er gjort endringer i, og om de er addet, eller commitet. 
